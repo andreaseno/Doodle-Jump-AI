@@ -85,7 +85,7 @@ class Platform(Sprite):
 	@property
 	def bonus(self):return self.__bonus
 
-	def add_bonus(self,bonus_type:type) -> None:
+	def add_bonus(self,bonus_type:type):
 		""" Safely adds a bonus to the platform.
 		:param bonus_type type: the type of bonus to add.
 		"""
@@ -93,17 +93,17 @@ class Platform(Sprite):
 		if not self.__bonus and not self.breakable:
 			self.__bonus = bonus_type(self)
 	
-	def remove_bonus(self) -> None:
+	def remove_bonus(self):
 		" Safely removes platform's bonus."
 		self.__bonus = None
 
-	def onCollide(self) -> None:
+	def onCollide(self):
 		" Called in update if collision with player (safe to overrided)."
 		if self.breakable:
 			self.__level.remove_platform(self)
 		
 	# ( Overriding inheritance: Sprite.draw() )
-	def draw(self, surface:Surface) -> None:
+	def draw(self, surface:Surface):
 		""" Like Sprite.draw().
 		Also draws the platform's bonus if it has one.
 		:param surface pygame.Surface: the surface to draw on.
@@ -149,11 +149,11 @@ class Level(Singleton):
 
 	# Public getter for __platforms so it remains private
 	@property
-	def platforms(self) -> list:
+	def platforms(self):
 		return self.__platforms
 
 
-	async def _generation(self) -> None:
+	async def _generation(self):
 		" Asynchronous management of platforms generation."
 		# Check how many platform we need to generate
 		nb_to_generate = self.max_platforms - len(self.__platforms)
@@ -161,7 +161,7 @@ class Level(Singleton):
 			self.create_platform()
 		
 
-	def create_platform(self) -> None:
+	def create_platform(self):
 		" Create the first platform or a new one."
 		if self.__platforms:
 			# Generate a new random platform :
@@ -179,7 +179,7 @@ class Level(Singleton):
 			self.__platforms.append(self.__base_platform)
 
 
-	def remove_platform(self,plt:Platform) -> bool:
+	def remove_platform(self,plt:Platform):
 		""" Removes a platform safely.
 		:param plt Platform: the platform to remove
 		:return bool: returns true if platoform successfully removed
@@ -190,13 +190,13 @@ class Level(Singleton):
 		return False
 
 
-	def reset(self) -> None:
+	def reset(self):
 		" Called only when game restarts (after player death)."
 		seed(1)
 		self.__platforms = [self.__base_platform]
 
 
-	def update(self) -> None:
+	def update(self):
 		" Should be called each frame in main game loop for generation."
 		for platform in self.__to_remove:
 			if platform in self.__platforms:
@@ -205,7 +205,7 @@ class Level(Singleton):
 		asyncio.run(self._generation())
 
 
-	def draw(self,surface:Surface) -> None:
+	def draw(self,surface:Surface):
 		""" Called each frame in main loop, draws each platform
 		:param surface pygame.Surface: the surface to draw on.
 		"""

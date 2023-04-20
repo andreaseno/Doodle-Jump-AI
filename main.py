@@ -39,7 +39,7 @@ class Game(Singleton):
 	"""
 
 	# constructor called on new instance: Game()
-	def __init__(self) -> None:
+	def __init__(self):
 		
 		# ============= Initialisation =============
 		self.__alive = True

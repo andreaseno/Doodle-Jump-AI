@@ -61,7 +61,7 @@ class Player(Sprite, Singleton):
 		self.dead = False
 	
 
-	def _fix_velocity(self) -> None:
+	def _fix_velocity(self):
 		""" Set player's velocity between max/min.
 		Should be called in Player.update().
 		"""
@@ -71,7 +71,7 @@ class Player(Sprite, Singleton):
 		self._velocity.x = round(max(self._velocity.x,-self.__maxvelocity.x),2)
 
 
-	def reset(self) -> None:
+	def reset(self):
 		" Called only when game restarts (after player death)."
 		self._velocity = Vector2()
 		self.rect = self.__startrect.copy()
@@ -79,7 +79,7 @@ class Player(Sprite, Singleton):
 		self.dead = False
 
 
-	def handle_event(self,event:Event) -> None:
+	def handle_event(self,event:Event):
 		""" Called in main loop foreach user input event.
 		:param event pygame.Event: user input event
 		"""
@@ -99,17 +99,17 @@ class Player(Sprite, Singleton):
 				self._input = 0
 	
 
-	def jump(self,force:float=None) -> None:
+	def jump(self,force:float=None):
 		if not force:force = self._jumpforce
 		self._velocity.y = -force
 
 
-	def onCollide(self, obj:Sprite) -> None:
+	def onCollide(self, obj:Sprite):
 		self.rect.bottom = obj.rect.top
 		self.jump()
 	
 
-	def collisions(self) -> None:
+	def collisions(self):
 		""" Checks for collisions with level.
 		Should be called in Player.update().
 		"""
@@ -129,7 +129,7 @@ class Player(Sprite, Singleton):
 					platform.onCollide()
 
 
-	def update(self) -> None:
+	def update(self):
 		""" For position and velocity updates.
 		Should be called each frame.
 		"""
