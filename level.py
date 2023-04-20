@@ -18,13 +18,14 @@
 """
 
 
-from random import randint
+from random import randint, seed
 from pygame import Surface
 import asyncio
 
 from singleton import Singleton
 from sprite import Sprite
 import settings as config
+
 
 
 
@@ -154,6 +155,7 @@ class Level(Singleton):
 
 	async def _generation(self) -> None:
 		" Asynchronous management of platforms generation."
+		seed(1)
 		# Check how many platform we need to generate
 		nb_to_generate = self.max_platforms - len(self.__platforms)
 		for _ in range(nb_to_generate):
