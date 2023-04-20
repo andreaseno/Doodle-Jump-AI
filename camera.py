@@ -41,24 +41,24 @@ class Camera(Singleton):
 		self.center = height//2
 		self.maxheight = self.center
 
-	def reset(self) -> None:
+	def reset(self):
 		" Called only when game restarts (after player death)."
 		self.state.y = 0
 		self.maxheight = self.center
 	
-	def apply_rect(self,rect:Rect) -> Rect:
+	def apply_rect(self,rect:Rect):
 		""" Transforms given rect relative to camera position.
 		:param rect pygame.Rect: the rect to transform
 		"""
 		return rect.move((0,-self.state.topleft[1]))
 	
-	def apply(self, target:Sprite) -> Rect:
+	def apply(self, target:Sprite):
 		""" Returns new target render position based on current camera position.
 		:param target Sprite: a sprite that wants to get its render position.
 		"""
 		return self.apply_rect(target.rect)
 	
-	def update(self, target:Rect) -> None:
+	def update(self, target:Rect):
 		""" Scrolls up to maxheight reached by player.
 		Should be called each frame.
 		:param target pygame.Rect: the target position to follow.

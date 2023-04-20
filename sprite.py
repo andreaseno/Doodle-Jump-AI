@@ -41,14 +41,14 @@ class Sprite:
 
 	# Public getters for _image & __color so they remain private
 	@property
-	def image(self) -> Surface:
+	def image(self):
 		return self._image
 	@property
-	def color(self) -> tuple:
+	def color(self):
 		return self.__color
 
 	@color.setter
-	def color(self, new:tuple) -> None:
+	def color(self, new:tuple):
 		" Called when Sprite.__setattr__('color',x)."
 		assert isinstance(new,tuple) and len(new)==3,"Value is not a color"
 		self.__color = new
@@ -56,7 +56,7 @@ class Sprite:
 		self._image.fill(self.color)
 	
 
-	def draw(self, surface:Surface) -> None:
+	def draw(self, surface:Surface):
 		""" Render method,Should be called every frame after update.
 		:param surface pygame.Surface: the surface to draw on.
 		"""
