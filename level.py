@@ -192,6 +192,7 @@ class Level(Singleton):
 
 	def reset(self) -> None:
 		" Called only when game restarts (after player death)."
+		seed(1)
 		self.__platforms = [self.__base_platform]
 
 
