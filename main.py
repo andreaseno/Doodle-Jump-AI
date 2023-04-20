@@ -25,6 +25,7 @@ from camera import Camera
 from player import Player
 from level import Level
 import settings as config
+from random import seed
 
 
 
@@ -130,6 +131,7 @@ class Game(Singleton):
 
 if __name__ == "__main__":
 	# ============= PROGRAM STARTS HERE =============
+	seed(1)
 	game = Game()
 	game.run()
 
