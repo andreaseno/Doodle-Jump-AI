@@ -93,6 +93,9 @@ class Game(Singleton):
 	def _update_loop(self):
 		# ----------- Update -----------
 		self.player.update()
+  
+		# TODO: position self.player.x
+  
 		self.lvl.update()
 
 		if not self.player.dead:
@@ -119,12 +122,18 @@ class Game(Singleton):
 
 
 	def run(self):
+     
 		# ============= MAIN GAME LOOP =============
 		while self.__alive:
 			self._event_loop()
 			self._update_loop()
 			self._render_loop()
+   
+		
+		score = self.score
 		pygame.quit()
+		
+		return score
 
 
 
