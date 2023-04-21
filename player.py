@@ -97,6 +97,15 @@ class Player(Sprite, Singleton):
 			if (event.key== K_LEFT and self._input==-1) or (
 					event.key==K_RIGHT and self._input==1):
 				self._input = 0
+	def handle_ml_input(self,ml_input:int) -> None:
+		""" Called in main loop foreach user input event.
+		:param event pygame.Event: user input event
+		"""
+		# Check if start moving
+		if ml_input != 0:
+			# Moves player only on x-axis (left/right)
+			self._velocity.x=ml_input*self.__startspeed
+		self._input = ml_input
 	
 
 	def jump(self,force:float=None) -> None:

@@ -9,7 +9,7 @@ XWIN, YWIN = 600,800 #                Resolution
 HALF_XWIN,HALF_YWIN = XWIN/2,YWIN/2 # Center
 DISPLAY = (XWIN,YWIN)
 FLAGS = 0 #                           Fullscreen, resizeable... 
-FPS = 60 #                            Render frame rate
+FPS = 6000 #                            Render frame rate
 
 # Colors
 BLACK = (0,0,0)
@@ -39,3 +39,7 @@ BREAKABLE_PLATFORM_CHANCE = 12
 # Fonts
 LARGE_FONT = SysFont("",128)
 SMALL_FONT = SysFont("arial",24)
+
+
+# ML Stuff
+num_player = 100
