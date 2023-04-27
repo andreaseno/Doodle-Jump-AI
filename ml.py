@@ -18,7 +18,10 @@
 """
 
 
-import pygame, sys
+import pygame, sys, random
+import pandas as pd
+import numpy as np
+
 
 from singleton import Singleton
 from camera import Camera
@@ -27,7 +30,9 @@ from level import Level
 import settings as config
 from random import seed
 
-
+seed(1)
+best_moves = []
+best_height = 0
 
 class Game(Singleton):
 	"""
@@ -47,11 +52,15 @@ class Game(Singleton):
 		self.window = pygame.display.set_mode(config.DISPLAY,config.FLAGS)
 		self.clock = pygame.time.Clock()
 
-		
-		# self.moves = [-1]*10000
+
+		self.moves = self.random_moves()
+		self.prevmove = 0
 		self.loop_it = 0
-		self.player_list = []
-		self.moves_list = []
+		self.rewards = []
+
+		# self.X= []
+		# self.player_list = []
+		# self.moves_list = []
 
 		# Instances
 		self.camera = Camera()
@@ -62,22 +71,22 @@ class Game(Singleton):
 			*config.PLAYER_SIZE,# SIZE
 			config.PLAYER_COLOR#  COLOR
 		)
-		for _ in range(config.num_player):
-			self.player_list.append(
-				Player(
-					config.HALF_XWIN - config.PLAYER_SIZE[0]/2,# X POS
-					config.HALF_YWIN + config.HALF_YWIN/2,#      Y POS
-					*config.PLAYER_SIZE,# SIZE
-					config.PLAYER_COLOR#  COLOR
-				)
-			)
-			self.moves_list.append([-1]*10000)
+		# for _ in range(config.num_player):
+		# 	self.player_list.append(
+		# 		Player(
+		# 			config.HALF_XWIN - config.PLAYER_SIZE[0]/2,# X POS
+		# 			config.HALF_YWIN + config.HALF_YWIN/2,#      Y POS
+		# 			*config.PLAYER_SIZE,# SIZE
+		# 			config.PLAYER_COLOR#  COLOR
+		# 		)
+		# 	)
+		# 	self.moves_list.append([-1]*10000)
 
 
 		
 
 		# User Interface
-		self.score = [0]*config.num_player
+		self.score = 0
 		self.score_txt = config.SMALL_FONT.render("0 m",1,config.GRAY)
 		self.score_pos = pygame.math.Vector2(10,10)
 
@@ -85,6 +94,19 @@ class Game(Singleton):
 		self.gameover_rect = self.gameover_txt.get_rect(
 			center=(config.HALF_XWIN,config.HALF_YWIN))
 	
+	def random_moves(self):
+		repeat = 10
+		rand_list = []
+		for i in range(0,10000,repeat):
+			rand_list += []*repeat
+		return rand_list
+
+
+	def reward(self):
+		return 1
+
+	
+
 	
 	def close(self):
 		self.__alive = False
@@ -114,19 +136,19 @@ class Game(Singleton):
 
 	def _update_loop(self):
 		# ----------- Update -----------
-		for i in range(config.num_player):
-			self.player_list[i].update()
+		# for i in range(config.num_player):
+		self.player.update()
 		self.lvl.update()
 
-		for i in range(config.num_player):
-			if not self.player_list[i].dead:
-				self.camera.update(self.player_list[i].rect)
-				#calculate score and update UI txt
-				self.score[i]=-self.camera.state.y//50
-				self.score_txt = config.SMALL_FONT.render(
-					str(self.score)+" m", 1, config.GRAY)
-					# HEIGHT and x value DATA IS UPDATED HERE 
-		
+	
+		if not self.player.dead:
+			self.camera.update(self.player.rect)
+			#calculate score and update UI txt
+			self.score=-self.camera.state.y//50
+			self.score_txt = config.SMALL_FONT.render(
+				str(self.score)+" m", 1, config.GRAY)
+				# HEIGHT and x value DATA IS UPDATED HERE 
+	
 	
 
 	def _render_loop(self):
@@ -146,6 +168,9 @@ class Game(Singleton):
 
 	def _ml_loop(self):
 		height_score=self.score
+		nearest_plat = self.lvl.nearest_platform(self.player.rect.x,self.player.rect.y)
+		cur_row = [height_score, self.player.rect.x,self.player.rect.y,nearest_plat[0],nearest_plat[1]]
+		# self.X.append(cur_row)
 
 		# handle various event replacements
 
@@ -153,11 +178,25 @@ class Game(Singleton):
 		# (TODO) handle player reset instead of enter key
 		if (self.player.dead):
 			# self.generation_end()
+			# self.moves = self.random_moves()
+			for element in self.X:
+				print(element)
+			# kmeans = KMeans(n_clusters=2, random_state=0, n_init="auto").fit(self.X)
+			
+			
 			self.reset()
 
 		# (TODO) handle handle_event()
-		# print(self.moves)
-		self.player.handle_ml_input(self.moves[self.loop_it])
+		# print(cur_row)
+		arr_cur_row = np.array(cur_row)
+		move = self.kmeans.predict(arr_cur_row.reshape(1,-1))
+		
+		if(self.loop_it>0):
+			self.player.handle_ml_input(move,self.prevmove)
+		else:
+			self.player.handle_ml_input(self.moves[self.loop_it],0)
+		self.prevmove=move
+		# self.rewards.append(self.reward())
 
 		# TODO train the 
 
@@ -193,7 +232,7 @@ class Game(Singleton):
 			self._update_loop()
 			self._render_loop()
 			self.loop_it+=1
-			print(self.loop_it)
+			# print(self.loop_it)
 		pygame.quit()
 
 
@@ -201,7 +240,7 @@ class Game(Singleton):
 
 if __name__ == "__main__":
 	# ============= PROGRAM STARTS HERE =============
-	seed(1)
+
 	game = Game()
 	game.run()
 

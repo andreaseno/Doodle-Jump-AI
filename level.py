@@ -21,6 +21,7 @@
 from random import randint, seed
 from pygame import Surface
 import asyncio
+import math
 
 from singleton import Singleton
 from sprite import Sprite
@@ -152,6 +153,17 @@ class Level(Singleton):
 	def platforms(self) -> list:
 		return self.__platforms
 
+	def nearest_platform(self, x, y):
+		close_x=0
+		close_y=0
+		min_dist=100000
+		for platform in self.__platforms:
+			dist = math.dist([platform.rect.x,platform.rect.y], [x,y])
+			if dist < min_dist:
+				min_dist = dist
+				close_x = platform.rect.x
+				close_y = platform.rect.y
+		return [close_x, close_y]
 
 	async def _generation(self) -> None:
 		" Asynchronous management of platforms generation."

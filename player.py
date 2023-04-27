@@ -28,6 +28,7 @@ from singleton import Singleton
 from sprite import Sprite
 from level import Level
 import settings as config
+from icecream import ic
 
 
 
@@ -83,6 +84,7 @@ class Player(Sprite, Singleton):
 		""" Called in main loop foreach user input event.
 		:param event pygame.Event: user input event
 		"""
+		# ic(event)
 		# Check if start moving
 		if event.type == KEYDOWN:
 			# Moves player only on x-axis (left/right)
@@ -97,13 +99,13 @@ class Player(Sprite, Singleton):
 			if (event.key== K_LEFT and self._input==-1) or (
 					event.key==K_RIGHT and self._input==1):
 				self._input = 0
-	def handle_ml_input(self,ml_input:int) -> None:
+	def handle_ml_input(self,ml_input:int, prev_move:int) -> None:
 		""" Called in main loop foreach user input event.
 		:param event pygame.Event: user input event
 		"""
 		# Check if start moving
-		if ml_input != 0:
-			# Moves player only on x-axis (left/right)
+		# Moves player only on x-axis (left/right)
+		if (ml_input!=prev_move):
 			self._velocity.x=ml_input*self.__startspeed
 		self._input = ml_input
 	
@@ -150,6 +152,9 @@ class Player(Sprite, Singleton):
 		self._velocity.y += self.gravity
 		if self._input: # accelerate
 			self._velocity.x += self._input*self.accel
+			# ic(self._input)
+			# ic(self._velocity.x)
+			# ic(self.accel)
 		elif self._velocity.x: # deccelerate
 			self._velocity.x -= getsign(self._velocity.x)*self.deccel
 			self._velocity.x = round(self._velocity.x)

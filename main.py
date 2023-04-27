@@ -18,7 +18,7 @@
 """
 
 
-import pygame, sys
+import pygame, sys, csv
 
 from singleton import Singleton
 from camera import Camera
@@ -43,6 +43,8 @@ class Game(Singleton):
 		
 		# ============= Initialisation =============
 		self.__alive = True
+		self.X=[]
+		self.header=["height_score", "player_x","player_y","nearest_plat_x","nearest_plat_y"]
 		# Window / Render
 		self.window = pygame.display.set_mode(config.DISPLAY,config.FLAGS)
 		self.clock = pygame.time.Clock()
@@ -84,16 +86,31 @@ class Game(Singleton):
 				self.close()
 			elif event.type == pygame.KEYDOWN:
 				if event.key == pygame.K_ESCAPE:
+					with open('moves.csv', 'w', encoding='UTF8', newline='') as f:
+						writer = csv.writer(f)
+
+						# write the header
+						writer.writerow(self.header)
+
+						# write multiple rows
+						writer.writerows(self.X)
 					self.close()
 				if event.key == pygame.K_RETURN and self.player.dead:
+					self.X=[]
 					self.reset()
 			self.player.handle_event(event)
+
 
 
 	def _update_loop(self):
 		# ----------- Update -----------
 		self.player.update()
 		self.lvl.update()
+
+		height_score=self.score
+		nearest_plat = self.lvl.nearest_platform(self.player.rect.x,self.player.rect.y)
+		cur_row = [height_score, self.player.rect.x,self.player.rect.y,nearest_plat[0],nearest_plat[1]]
+		self.X.append(cur_row)
 
 		if not self.player.dead:
 			self.camera.update(self.player.rect)
