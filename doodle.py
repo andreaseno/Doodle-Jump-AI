@@ -1,10 +1,29 @@
-import pygame, sys, random, math, os, time
+import os
+
+os.environ['PYGAME_HIDE_SUPPORT_PROMPT'] = 'True'
+
+import pygame 
+import sys
+import math
+import time
+import multiprocessing
+
+import random
+random.seed(2023)
+
+import numpy as np
+
+from icecream import ic
 
 RENDER = True
 # default resolution: 360 x 640
 RESOLUTION = WIDTH, HEIGHT = 360, 640
 TITLE = "Doodle Jump"
 TIME_SPEED = 1
+
+NUM_PLAYERS = 3
+
+REPEATED_MOVES = 100
 
 pygame.init()
 gravity = 0.15
@@ -29,7 +48,7 @@ class Player():
     height = 32 * y_scale
     width = 32 * y_scale
 
-    def __init__(self):
+    def __init__(self, rand_seed):
         self.y = HEIGHT - self.height
         self.x = (WIDTH - self.width) // 2
         self.y_speed = -self.jump_force
@@ -37,6 +56,33 @@ class Player():
         self.direction = 0
         self.moving_direction = 0
         self.score = 0
+        np.random.seed(rand_seed)
+        self.color = (
+            np.random.randint(0,256),
+            np.random.randint(0,256),
+            np.random.randint(0,256),
+        )
+        self.id = rand_seed
+        ic(self.id, self.color)
+        
+        self.move_list = list()
+        
+    def get_player_random(*args, **kwargs):
+        return np.random.randint(*args, **kwargs)
+    
+    def random_move(self, time_scale):
+        
+        if len(self.move_list) == 0:
+            r = np.random.randint(-1,2)
+            # move left
+            if   r == -1: self.move_list = [(True, False)]*REPEATED_MOVES
+            # move right
+            elif r ==  1: self.move_list = [(False, True)]*REPEATED_MOVES
+            # stand still
+            else:         self.move_list = [(False, False)]*REPEATED_MOVES
+
+        move = self.move_list.pop()
+        self.move(*move,time_scale)
 
     def move(self, left_key_pressed, right_key_pressed, time_scale):
         # simulate gravity
@@ -231,19 +277,19 @@ def new_platforms(player):
             springs.append(Spring(platform))
 
 
-def game_over():
-    pass
+def quit():
+    file = open(file_name, "w")
+    file.write(str(int(high_score)))
+    file.close()
+    pygame.quit()
+    sys.exit()
 
 
 def get_event():
     if RENDER:
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
-                file = open(file_name, "w")
-                file.write(str(int(high_score)))
-                file.close()
-                pygame.quit()
-                sys.exit()
+                quit()
     pressed = pygame.key.get_pressed()
     left_key_pressed = pressed[pygame.K_LEFT] or pressed[pygame.K_a]
     right_key_pressed = pressed[pygame.K_RIGHT] or pressed[pygame.K_d]
@@ -280,7 +326,7 @@ def update_game(player, platforms, springs, time_scale, movement):
             player.high_jump()
 
 
-def render_game(screen, player, platforms, springs, time_scale):
+def render_game(screen, players: list[Player], platforms, springs, time_scale):
     screen.fill(background_color)
 
     for platform in platforms:
@@ -289,7 +335,8 @@ def render_game(screen, player, platforms, springs, time_scale):
     for spring in springs:
         spring.draw()
 
-    player.draw()
+    for player in players:
+        player.draw()
 
     #print scores
     font = pygame.font.SysFont("Comic Sans MS", int(24 * y_scale))
@@ -306,7 +353,7 @@ def render_game(screen, player, platforms, springs, time_scale):
 
 
 def new_game():
-    player = Player()
+    players = [Player(rand_seed=random.randrange(1,1000000)) for _ in range(NUM_PLAYERS)]
     platforms = [Platform(HEIGHT - 1, 0)]
     platforms[0].x = 0
     platforms[0].width = WIDTH
@@ -314,7 +361,7 @@ def new_game():
     springs = []
     time_scale = 1
     prev_time = pygame.time.get_ticks()
-    return player, platforms, springs, time_scale, prev_time
+    return players, platforms, springs, time_scale, prev_time
 
 def is_game_over(player):
     if player.score == 0 and player.y + Player.height > HEIGHT - 2:
@@ -324,10 +371,14 @@ def is_game_over(player):
     elif player.y > HEIGHT:
         return True
     return False
-
+   
+   
 def simulate(player, platforms, springs, time_scale):
-    (left_key_pressed, right_key_pressed) = get_event()
-    player.move(left_key_pressed, right_key_pressed, time_scale)
+    ## User Move
+    # (left_key_pressed, right_key_pressed) = get_event()
+    # player.move(left_key_pressed, right_key_pressed, time_scale)
+
+    player.random_move(time_scale)
 
     # check if player go above half of screen's height
     if player.y < HEIGHT // 2 - player.height:
@@ -337,14 +388,6 @@ def simulate(player, platforms, springs, time_scale):
         movement = 0
     player.score += movement / 4 / y_scale
     update_game(player, platforms, springs, time_scale, movement)
-
-    if RENDER:
-        render_game(screen, player, platforms, springs, time_scale)
-
-
-
-player, platforms, springs, time_scale, prev_time = new_game()
-
 
 def read_high_score():
     if os.path.isfile(file_name) == False:
@@ -358,18 +401,44 @@ def read_high_score():
 
 
 high_score = read_high_score()
+
+players, platforms, springs, time_scale, prev_time = new_game()
+
+i = 0
 while True:
-    simulate(player, platforms, springs, time_scale)
-    if player.score > high_score:
-        high_score = player.score
+    dead_players = list()
+    
+    if RENDER:
+        render_game(screen, players, platforms, springs, time_scale)
+        
+    for idx, player in enumerate(players):
+        
+        if i%100 == 0:
+            ic(player.id,round(player.y,2))
+        
+        simulate(player, platforms, springs, time_scale)
+        if player.score > high_score:
+            high_score = player.score
 
-    new_platforms(player)
+        new_platforms(player)
 
-    if is_game_over(player):
-        player, platforms, springs, time_scale, prev_time = new_game()
+        if is_game_over(player):
+            dead_players.append(idx)
 
-    # Prevent the code from running too fast during a simulation
-    if not RENDER: time.sleep(0.01)
+        # Prevent the code from running too fast during a simulation
+        if not RENDER: time.sleep(0.01)
 
-    time_scale = (pygame.time.get_ticks() - prev_time) / 10 * TIME_SPEED
-    prev_time = pygame.time.get_ticks()
+        time_scale = (pygame.time.get_ticks() - prev_time) / 10 * TIME_SPEED
+        prev_time = pygame.time.get_ticks()
+    
+    for idx in dead_players:
+        # TODO: do something before remove dead player
+        del players[idx]
+        
+    if len(players) == 0:
+        quit()
+        
+    # House keeping   
+    if i%100 == 0:
+        ic('------')
+    i += 1
