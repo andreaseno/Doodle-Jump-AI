@@ -192,54 +192,13 @@ class Spring():
         pygame.draw.rect(screen, (0, 0, 0), (self.x, self.y, self.width, self.height), 1)
 
 
-def new_platforms(player):
-    
-    # as the score increaces, the gap between platforms increaces
-    if player.score < 500:
-        gap_lower_bound, gap_upper_bound = 24, 48
-    elif player.score < 1500:
-        gap_lower_bound, gap_upper_bound = 26, 52
-    elif player.score < 2500:
-        gap_lower_bound, gap_upper_bound = 28, 56
-    elif player.score < 3500:
-        gap_lower_bound, gap_upper_bound = 30, 60
-    elif player.score < 5000:
-        gap_lower_bound, gap_upper_bound = 32, 64
-    else:
-        gap_lower_bound, gap_upper_bound = 34, 68
-
-    # deleat platforms below the screen
-    i = 0
-    while i < len(platforms):
-        if platforms[i].y > HEIGHT:
-            del platforms[i]
-        i += 1
-    i = 0
-
-    # deleat springs below the screen
-    while i < len(springs):
-        if springs[i].y > HEIGHT:
-            del springs[i]
-        i += 1
-
-    # generate platforms&springs
-    while platforms[-1].y + platforms[-1].height >= 0:
-        gap = random.randint(gap_lower_bound, gap_upper_bound) * y_scale
-        platform = Platform(platforms[-1].y - gap, player.score)
-
-        # can't have 3 fake platforms in a row
-        if not (platform.type == 2 and platforms[-1].type == 2 and platforms[-2].type == 2):
-            platforms.append(platform)
-        # draw a spring if the platform have it
-        if platform.have_spring:
-            springs.append(Spring(platform))
 
 
 def game_over():
     pass
 
 
-def get_event():
+def get_event(high_score):
     if RENDER:
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
@@ -248,10 +207,7 @@ def get_event():
                 file.close()
                 pygame.quit()
                 sys.exit()
-    pressed = pygame.key.get_pressed()
-    left_key_pressed = pressed[pygame.K_LEFT] or pressed[pygame.K_a]
-    right_key_pressed = pressed[pygame.K_RIGHT] or pressed[pygame.K_d]
-    return left_key_pressed, right_key_pressed
+    
 
 
 def update_game(player, platforms, springs, time_scale, movement):
@@ -284,7 +240,7 @@ def update_game(player, platforms, springs, time_scale, movement):
             player.high_jump()
 
 
-def render_game(screen, player, platforms, springs, time_scale):
+def render_game(screen, player, platforms, springs, time_scale, high_score):
     screen.fill(background_color)
 
     for platform in platforms:
@@ -329,30 +285,10 @@ def is_game_over(player):
         return True
     return False
 
-def simulate(player, platforms, springs, time_scale, action):
-    if is_game_over(player):
-        player, platforms, springs, time_scale, prev_time = new_game()
-        # new_platforms(player)
-    get_event()
-    player.move(action, time_scale)
-    new_platforms(player)
-    # check if player go above half of screen's height
-    if player.y < HEIGHT // 2 - player.height:
-        movement = HEIGHT // 2 - player.height - player.y
-        player.y = HEIGHT // 2 - player.height
-    else:
-        movement = 0
-    player.score += movement / 4 / y_scale
-    update_game(player, platforms, springs, time_scale, movement)
 
-    if RENDER:
-        render_game(screen, player, platforms, springs, time_scale)
-    # if player.score > high_score:
-    #     high_score = player.score
     
     
 
-player, platforms, springs, time_scale, prev_time = new_game()
 
 def read_high_score():
     if os.path.isfile(file_name) == False:
@@ -364,21 +300,21 @@ def read_high_score():
     file.close()
     return high_score
 
-high_score = read_high_score()
 
 class DoodleJumpEnv(gym.Env):
     metadata = {"render_modes": ["human", "rgb_array"], "render_fps": 4}
-    # player, platforms, springs, time_scale, prev_time = new_game()
+
     def __init__(self, render_mode=None):
         
-        
-        # self.size = size  # The size of the square grid
-        # self.window_size = 512  # The size of the PyGame window
+        # initialize all the doodlejump game objects
+        self.player, self.platforms, self.springs, self.time_scale, self.prev_time = new_game()
+        self.high_score = read_high_score()
 
         # Observations are dictionaries with the agent's and the target's location.
         # Each location is encoded as an element of {0, ..., `size`}^2, i.e. MultiDiscrete([size, size]).
         self.observation_space = spaces.Dict(
             {
+                #  TODO fix observation space for PPO
                 "agent": spaces.Box(np.array([0,0]), np.array([WIDTH,HEIGHT]), dtype=int),
                 # "target": spaces.Box(0, size - 1, shape=(2,), dtype=int),
             }
@@ -387,19 +323,7 @@ class DoodleJumpEnv(gym.Env):
         # # We have 4 actions, corresponding to "right", "up", "left", "down"
         self.action_space = spaces.Discrete(3)
 
-        """
-        The following dictionary maps abstract actions from `self.action_space` to 
-        the direction we will walk in if that action is taken.
-        I.e. 0 corresponds to "right", 1 to "up" etc.
-        """
-
-        # self._action_to_direction = {
-        #     0: np.array([1, 0]),
-        #     1: np.array([0, 1]),
-        #     2: np.array([-1, 0]),
-        #     3: np.array([0, -1]),
-        # }
-
+        # for rendering
         assert render_mode is None or render_mode in self.metadata["render_modes"]
         self.render_mode = render_mode
 
@@ -412,6 +336,74 @@ class DoodleJumpEnv(gym.Env):
         """
         self.window = None
         self.clock = None
+    
+    def simulate(self, action):
+        # triggered when the doodle dies
+        if is_game_over(self.player):
+            self.player, self.platforms, self.springs, self.time_scale, self.prev_time = new_game()
+            #  TODO add reset function to here if we want it to call env.reset() every time the doodle dies
+        # update high score
+        if self.player.score > self.high_score:
+            self.high_score = self.player.score
+        # necessary for updating the high score as well as rendering the screen
+        get_event(self.high_score)
+        # move doodle based on input action (0,1,2)
+        self.player.move(action, self.time_scale)
+        # check if player go above half of screen's height
+        if self.player.y < HEIGHT // 2 - self.player.height:
+            movement = HEIGHT // 2 - self.player.height - self.player.y
+            self.player.y = HEIGHT // 2 - self.player.height
+        else:
+            movement = 0
+        self.player.score += movement / 4 / y_scale
+        update_game(self.player, self.platforms, self.springs, self.time_scale, movement)
+
+        if RENDER:
+            render_game(screen, self.player, self.platforms, self.springs, self.time_scale, self.high_score)
+
+    def new_platforms(self, player):
+        
+        # as the score increaces, the gap between platforms increaces
+        if player.score < 500:
+            gap_lower_bound, gap_upper_bound = 24, 48
+        elif player.score < 1500:
+            gap_lower_bound, gap_upper_bound = 26, 52
+        elif player.score < 2500:
+            gap_lower_bound, gap_upper_bound = 28, 56
+        elif player.score < 3500:
+            gap_lower_bound, gap_upper_bound = 30, 60
+        elif player.score < 5000:
+            gap_lower_bound, gap_upper_bound = 32, 64
+        else:
+            gap_lower_bound, gap_upper_bound = 34, 68
+
+        # deleat platforms below the screen
+        i = 0
+        while i < len(self.platforms):
+            if self.platforms[i].y > HEIGHT:
+                del self.platforms[i]
+            i += 1
+        i = 0
+
+        # deleat springs below the screen
+        while i < len(self.springs):
+            if self.springs[i].y > HEIGHT:
+                del self.springs[i]
+            i += 1
+
+        # generate platforms&springs
+        while self.platforms[-1].y + self.platforms[-1].height >= 0:
+            gap = random.randint(gap_lower_bound, gap_upper_bound) * y_scale
+            platform = Platform(self.platforms[-1].y - gap, player.score)
+
+            # can't have 3 fake platforms in a row
+            if not (platform.type == 2 and self.platforms[-1].type == 2 and self.platforms[-2].type == 2):
+                self.platforms.append(platform)
+            # draw a spring if the platform have it
+            if platform.have_spring:
+                self.springs.append(Spring(platform))
+    
+    
 
     def _get_obs(self):
         return {"agent": self._agent_location 
@@ -437,36 +429,20 @@ class DoodleJumpEnv(gym.Env):
 
         return observation, info
     def step(self, action):
-        # Map the action (element of {0,1,2,3}) to the direction we walk in
-        # direction = self._action_to_direction[action]
-        # We use `np.clip` to make sure we don't leave the grid
-        # self._agent_location = np.clip(
-        #     self._agent_location + direction, 0, self.size - 1
-        # )
-        # An episode is done iff the agent has reached the target
+        # TODO implement termination requirements (right now automatically false)
+        # ideas: terminate after a certain height is reached, terminate after a certain reward threshhold, 
+        #        terminate whenever we want to update weights 
         # terminated = np.array_equal(self._agent_location, self._target_location)
         terminated = False
         reward = 1 if terminated else 0  # Binary sparse rewards
         observation = self._get_obs()
         info = self._get_info()
-        # if player.score == 0 and player.y + Player.height > HEIGHT - 2:
-        #     player.y = HEIGHT - 2 - Player.height
-        #     player.jump()
-        # elif player.y > HEIGHT:
-        #     player, platforms, springs, time_scale, prev_time = new_game()
-        # if player.score == 0 and player.y + Player.height > HEIGHT - 2:
-        #     player.y = HEIGHT - 2 - Player.height
-        #     player.jump()
-        # elif player.y > HEIGHT:
-        #     print("asdfljkasl;df")
-        #     # player, platforms, springs, time_scale, prev_time = new_game()
-        # if player.score > high_score:
-        #     high_score = player.score
-        # new_platforms(player)
-        simulate(player, platforms, springs, time_scale, action)
+        self.new_platforms(self.player)
+        self.simulate( action)
         
 
-        
+         # Prevent the code from running too fast during a simulation
+        # if not RENDER: time.sleep(0.01)
         
         
         if self.render_mode == "human":
@@ -486,70 +462,6 @@ class DoodleJumpEnv(gym.Env):
         if self.clock is None and self.render_mode == "human":
             self.clock = pygame.time.Clock()
         
-    
-
-    
-
-    
-
-    # Prevent the code from running too fast during a simulation
-    # if not RENDER: time.sleep(0.01)
-
-    time_scale = (pygame.time.get_ticks() - prev_time) / 10 * TIME_SPEED
-    prev_time = pygame.time.get_ticks()
-        # canvas = pygame.Surface((self.window_size, self.window_size))
-        # canvas.fill((255, 255, 255))
-        # pix_square_size = (
-        #     self.window_size / self.size
-        # )  # The size of a single grid square in pixels
-
-        # # First we draw the target
-        # pygame.draw.rect(
-        #     canvas,
-        #     (255, 0, 0),
-        #     pygame.Rect(
-        #         pix_square_size * self._target_location,
-        #         (pix_square_size, pix_square_size),
-        #     ),
-        # )
-        # # Now we draw the agent
-        # pygame.draw.circle(
-        #     canvas,
-        #     (0, 0, 255),
-        #     (self._agent_location + 0.5) * pix_square_size,
-        #     pix_square_size / 3,
-        # )
-
-        # # Finally, add some gridlines
-        # for x in range(self.size + 1):
-        #     pygame.draw.line(
-        #         canvas,
-        #         0,
-        #         (0, pix_square_size * x),
-        #         (self.window_size, pix_square_size * x),
-        #         width=3,
-        #     )
-        #     pygame.draw.line(
-        #         canvas,
-        #         0,
-        #         (pix_square_size * x, 0),
-        #         (pix_square_size * x, self.window_size),
-        #         width=3,
-        #     )
-
-        # if self.render_mode == "human":
-        #     # The following line copies our drawings from `canvas` to the visible window
-        #     self.window.blit(canvas, canvas.get_rect())
-        #     pygame.event.pump()
-        #     pygame.display.update()
-
-        #     # We need to ensure that human-rendering occurs at the predefined framerate.
-        #     # The following line will automatically add a delay to keep the framerate stable.
-        #     self.clock.tick(self.metadata["render_fps"])
-        # else:  # rgb_array
-        #     return np.transpose(
-        #         np.array(pygame.surfarray.pixels3d(canvas)), axes=(1, 0, 2)
-        #     )
     def close(self):
         if self.window is not None:
             pygame.display.quit()
