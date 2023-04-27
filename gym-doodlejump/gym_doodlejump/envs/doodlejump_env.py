@@ -345,6 +345,9 @@ class DoodleJumpEnv(gym.Env):
         # update high score
         if self.player.score > self.high_score:
             self.high_score = self.player.score
+            file = open(file_name, "w")
+            file.write(str(int(self.high_score)))
+            file.close()
         # necessary for updating the high score as well as rendering the screen
         get_event(self.high_score)
         # move doodle based on input action (0,1,2)
