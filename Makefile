@@ -1,2 +1,2 @@
 run:
-	@python3 main.py
+	@/Users/phan/miniconda3/bin/python3 doodle.py
