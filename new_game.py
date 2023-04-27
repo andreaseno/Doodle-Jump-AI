@@ -5,6 +5,7 @@ RENDER = True
 RESOLUTION = WIDTH, HEIGHT = 360, 640
 TITLE = "Doodle Jump"
 TIME_SPEED = 1
+RANDOM_AI = True
 
 pygame.init()
 gravity = 0.15
@@ -28,6 +29,8 @@ class Player():
     color2 = (0, 255, 255)
     height = 32 * y_scale
     width = 32 * y_scale
+    moves = []
+    moves_performed = 0
 
     def __init__(self):
         self.y = HEIGHT - self.height
@@ -37,6 +40,10 @@ class Player():
         self.direction = 0
         self.moving_direction = 0
         self.score = 0
+
+        for _ in range(1000):
+            choice = random.choice([-1,0,1])
+            self.moves.extend([choice] * 5)
 
     def move(self, left_key_pressed, right_key_pressed, time_scale):
         # simulate gravity
@@ -106,18 +113,21 @@ class Platform():
         self.x = random.randint(0, int(WIDTH - self.width))
         self.y = y
         # platform types
-        if score < 500:
+        if(RANDOM_AI):
             self.type = 0
-        elif score < 1500:
-            self.type = random.choice([0, 0, 0, 0, 0, 0, 1, 1])
-        elif score < 2500:
-            self.type = random.choice([0, 0, 0, 0, 1, 1, 1, 1])
-        elif score < 3500:
-            self.type = random.choice([0, 0, 0, 1, 1, 1, 1, 2])
-        elif score < 5000:
-            self.type = random.choice([0, 0, 1, 1, 1, 2, 3])
         else:
-            self.type = random.choice([1, 1, 1, 1, 1, 2, 3, 3])
+            if score < 500:
+                self.type = 0
+            elif score < 1500:
+                self.type = random.choice([0, 0, 0, 0, 0, 0, 1, 1])
+            elif score < 2500:
+                self.type = random.choice([0, 0, 0, 0, 1, 1, 1, 1])
+            elif score < 3500:
+                self.type = random.choice([0, 0, 0, 1, 1, 1, 1, 2])
+            elif score < 5000:
+                self.type = random.choice([0, 0, 1, 1, 1, 2, 3])
+            else:
+                self.type = random.choice([1, 1, 1, 1, 1, 2, 3, 3])
 
         # decide if platform has spring on top
         # decide initial direction the platform if it moves
@@ -327,6 +337,23 @@ def is_game_over(player):
 
 def simulate(player, platforms, springs, time_scale):
     (left_key_pressed, right_key_pressed) = get_event()
+
+    if(RANDOM_AI):
+        current_move = player.moves[player.moves_performed]
+        if(current_move == -1):
+            left_key_pressed = 1
+            right_key_pressed = 0
+        elif(current_move == 1):
+            left_key_pressed = 0
+            right_key_pressed = 1
+        else:
+            left_key_pressed = 1
+            right_key_pressed = 1
+        player.moves_performed+=1
+        # add new random moves if initial ones are used
+        if(player.moves_performed == len(player.moves)):
+            choice = random.choice([-1,0,1])
+            player.moves.extend([choice] * 5)
     player.move(left_key_pressed, right_key_pressed, time_scale)
 
     # check if player go above half of screen's height
