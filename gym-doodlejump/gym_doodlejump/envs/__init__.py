@@ -1,0 +1,1 @@
+from gym_doodlejump.envs.doodlejump_env import DoodleJumpEnv

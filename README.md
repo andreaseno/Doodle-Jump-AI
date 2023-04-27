@@ -18,8 +18,13 @@ The simplest doodle jump made with python3 and pygame in only 2 days
 ## Requirements
 * [Python3](https://www.python.org/downloads/)
 * [Pygame](https://www.pygame.org/news)
+* [Gym] (https://www.gymlibrary.dev/)
 
 ## Setup
 * Download zip, fork or clone.
 * Install requirements
+* Navigate into the gym-doodlejump/ folder
+* Run 'pip install -e .'
+* Navigate back to main folder with cd ..
+* Run my_gym.py
 * And Run !
