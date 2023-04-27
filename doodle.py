@@ -86,6 +86,9 @@ class Player():
 
     def move(self, left_key_pressed, right_key_pressed, time_scale):
         # simulate gravity
+        
+        # ic(self.id, left_key_pressed, right_key_pressed)
+        
         self.y_speed += gravity * time_scale
         self.y += self.y_speed * time_scale
 
@@ -353,7 +356,11 @@ def render_game(screen, players: list[Player], platforms, springs, time_scale):
 
 
 def new_game():
-    players = [Player(rand_seed=random.randrange(1,1000000)) for _ in range(NUM_PLAYERS)]
+    players = list()
+    for _ in range(NUM_PLAYERS):
+        player = Player(rand_seed=random.randrange(1,1000000))
+        players.append(player)
+        
     platforms = [Platform(HEIGHT - 1, 0)]
     platforms[0].x = 0
     platforms[0].width = WIDTH
@@ -381,11 +388,11 @@ def simulate(player, platforms, springs, time_scale):
     player.random_move(time_scale)
 
     # check if player go above half of screen's height
-    if player.y < HEIGHT // 2 - player.height:
-        movement = HEIGHT // 2 - player.height - player.y
-        player.y = HEIGHT // 2 - player.height
-    else:
-        movement = 0
+    # if player.y < HEIGHT // 2 - player.height:
+    #     movement = HEIGHT // 2 - player.height - player.y
+    #     player.y = HEIGHT // 2 - player.height
+    # else: movement = 0
+    movement = 0
     player.score += movement / 4 / y_scale
     update_game(player, platforms, springs, time_scale, movement)
 
@@ -410,20 +417,20 @@ while True:
     
     if RENDER:
         render_game(screen, players, platforms, springs, time_scale)
+    
+    high_score_player = players[0]    
         
     for idx, player in enumerate(players):
-        
-        if i%100 == 0:
-            ic(player.id,round(player.y,2))
         
         simulate(player, platforms, springs, time_scale)
         if player.score > high_score:
             high_score = player.score
 
-        new_platforms(player)
 
         if is_game_over(player):
             dead_players.append(idx)
+        elif player.score > high_score_player.score:
+            high_score_player = player
 
         # Prevent the code from running too fast during a simulation
         if not RENDER: time.sleep(0.01)
@@ -438,7 +445,6 @@ while True:
     if len(players) == 0:
         quit()
         
-    # House keeping   
-    if i%100 == 0:
-        ic('------')
-    i += 1
+        
+    """create new platforms based on player with highest score"""  
+    new_platforms(high_score_player)
