@@ -26,7 +26,7 @@ from singleton import Singleton
 from sprite import Sprite
 import settings as config
 
-
+import pandas as pd
 
 
 #return True with a chance of: P(X=True)=1/x
@@ -134,6 +134,8 @@ class Level(Singleton):
 		self.max_platforms = config.MAX_PLATFORM_NUMBER
 		self.distance_min = min(config.PLATFORM_DISTANCE_GAP)
 		self.distance_max = max(config.PLATFORM_DISTANCE_GAP)
+  
+		print(self.distance_max, self.distance_min)
 
 		self.bonus_platform_chance = config.BONUS_SPAWN_CHANCE
 		self.breakable_platform_chance = config.BREAKABLE_PLATFORM_CHANCE
@@ -145,6 +147,9 @@ class Level(Singleton):
 			config.HALF_XWIN - self.platform_size[0]//2,# X POS
 			config.HALF_YWIN + config.YWIN/3, #           Y POS
 			*self.platform_size)#                         SIZE
+  
+  
+		self.__platforms_csv = pd.read_csv('platform.csv')
 	
 
 	# Public getter for __platforms so it remains private
@@ -160,6 +165,8 @@ class Level(Singleton):
 		for _ in range(nb_to_generate):
 			self.create_platform()
 		
+	def read_platform(self):
+		new_platform = self.__platforms_csv.index[0]
 
 	def create_platform(self):
 		" Create the first platform or a new one."
