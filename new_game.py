@@ -387,6 +387,8 @@ def read_high_score():
 high_score = read_high_score()
 scores = []
 avg_scores_times = []
+time_per_run = []
+start_time = time.time()
 while True:
     simulate(player, platforms, springs, time_scale)
     if player.score > high_score:
@@ -395,16 +397,25 @@ while True:
     new_platforms(player)
 
     if is_game_over(player):
+        end_time = time.time()
         scores.append(player.score)
+        time_per_run.append(end_time-start_time)
         total = 0
+        total_time = 0
         for score in scores:
             total += score
+        for t in time_per_run:
+            total_time += t
         avg_scores_times.append(total/len(scores))
-        file = open('scores.txt', "a")
-        file.write(str(total/len(scores)) + '\n')
-        file.close()
+        # file = open('scores.txt', "a")
+        # file.write(str(total/len(scores)) + '\n')
+        # file.close()
+        # file = open('timePerRun.txt', "a")
+        # file.write(str(total_time/len(time_per_run)) + '\n')
+        # file.close()
 
         player, platforms, springs, time_scale, prev_time = new_game()
+        start_time = time.time()
 
     # Prevent the code from running too fast during a simulation
     if not RENDER: time.sleep(0.01)
