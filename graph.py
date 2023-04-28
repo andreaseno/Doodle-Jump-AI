@@ -14,7 +14,7 @@ for line in Lines:
     count += 1
     print("Line{}: {}".format(count, line.strip()))
     scores.append(float(line.strip()))
-    if count >200: break
+    if count >49: break
 
 scores = np.array(scores)
 x = np.array(range(len(scores)))
@@ -39,19 +39,35 @@ for line in Lines:
     count += 1
     print("Line{}: {}".format(count, line.strip()))
     scores2.append(float(line.strip()))
-    if count > 200: break
+    if count > 49: break
 
-scores2 = np.array(scores2)
+scores3 = np.array(scores2)
 x2 = np.array(range(len(scores2)))
+
+file1 = open('ppo-scores.txt', 'r')
+Lines = file1.readlines()
+ 
+count = 0
+# Strips the newline character
+scores3 = []
+for line in Lines:
+    count += 1
+    print("Line{}: {}".format(count, line.strip()))
+    scores3.append(float(line.strip()))
+    if count > 49: break
+
+scores3 = np.array(scores3)
+x2 = np.array(range(len(scores3)))
 
 d = {'average_scores': scores, 'trials': x}
 pdnumsqr = pd.DataFrame(d)
 # print(len(),len(),len())
 df = pd.DataFrame({'year': x,
                    'random': scores,
-                   'lessnaive': scores2
+                   'lessnaive': scores2,
+                   'PPO':scores3
                    })
-sns.lineplot(data=df[['random', 'lessnaive']])
+sns.lineplot(data=df[['random', 'lessnaive','PPO']])
 
 # sns.set_style("darkgrid")
 # sns.lineplot(x='trials', y='average_scores', data=pdnumsqr)
@@ -121,6 +137,31 @@ for line in Lines:
 
 scores2 = np.array(scores2)
 x2 = np.array(range(len(scores2)))
+
+file1 = open('ppo-scoresPerMove.txt', 'r')
+Lines = file1.readlines()
+ 
+count = 0
+# Strips the newline character
+scores3 = []
+for line in Lines:
+    count += 1
+    print("Line{}: {}".format(count, line.strip()))
+    scores3.append(float(line.strip()))
+    if count > 49: break
+
+scores3 = np.array(scores3)
+x2 = np.array(range(len(scores3)))
+
+d = {'average_scores': scores, 'trials': x}
+pdnumsqr = pd.DataFrame(d)
+# print(len(),len(),len())
+df = pd.DataFrame({'year': x,
+                   'random': scores,
+                   'lessnaive': scores2,
+                   'PPO':scores3
+                   })
+sns.lineplot(data=df[['random', 'lessnaive','PPO']])
 
 d = {'average_scores': scores, 'trials': x}
 pdnumsqr = pd.DataFrame(d)

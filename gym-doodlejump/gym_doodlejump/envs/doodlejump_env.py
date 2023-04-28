@@ -6,7 +6,7 @@ from icecream import ic
 
 
 
-RENDER = False
+RENDER = True
 # default resolution: 360 x 640
 RESOLUTION = WIDTH, HEIGHT = 360, 640
 TITLE = "Doodle Jump"

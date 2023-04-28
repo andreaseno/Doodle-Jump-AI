@@ -1,7 +1,7 @@
 import pygame, sys, random, math, os, time
 random.seed(2023)
 
-RENDER = False
+RENDER = True
 # default resolution: 360 x 640
 RESOLUTION = WIDTH, HEIGHT = 360, 640
 TITLE = "Doodle Jump"
@@ -251,7 +251,7 @@ def get_event():
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 file = open(file_name, "w")
-                file.write(str(int(high_score)))
+                # file.write(str(int(high_score)))
                 file.close()
                 pygame.quit()
                 sys.exit()
