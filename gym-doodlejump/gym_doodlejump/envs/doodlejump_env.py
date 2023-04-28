@@ -2,6 +2,8 @@ import pygame, sys, random, math, os, time, gym
 import numpy as np
 from gym import error, spaces, utils
 from gym.utils import seeding
+from icecream import ic
+
 
 RENDER = True
 # default resolution: 360 x 640
@@ -440,7 +442,7 @@ class DoodleJumpEnv(gym.Env):
 
     def reset(self, seed=None, options=None):
         # We need the following line to seed self.np_random
-        print("Selman ERIS")
+        # print("Selman ERIS")
         super().reset(seed=seed)
 
         # Choose the agent's location 
@@ -455,6 +457,10 @@ class DoodleJumpEnv(gym.Env):
             self._render_frame()
 
         return observation, info
+    def get_rewards(self,score,prev_score):
+        ic(score)
+        if prev_score<score: return 1
+        else: return 0
     def step(self, action):
         # TODO implement termination requirements (right now automatically false)
         # ideas: terminate after a certain height is reached, terminate after a certain reward threshhold, 
@@ -465,12 +471,14 @@ class DoodleJumpEnv(gym.Env):
             self.num_deaths = 0
         # terminated = np.array_equal(self._agent_location, self._target_location)
         
-        reward = 1 if terminated else 0  # Binary sparse rewards
+        
         info = self._get_info()
         observation = self._get_obs()
+        prev_score=self.player.score
         
         self.new_platforms(self.player)
         self.simulate( action)
+        reward = self.get_rewards(self.player.score,prev_score)
         
 
          # Prevent the code from running too fast during a simulation

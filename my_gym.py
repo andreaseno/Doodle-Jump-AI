@@ -116,7 +116,7 @@ def test_reward(env):
         next_state, reward, done, _, info = env.step(action)
         state = next_state
         total_reward += reward
-
+    ic(total_reward)
     return total_reward
 
 def preprocess1(states, actions, rewards, done, values, gamma):
@@ -153,7 +153,7 @@ avg_rewards_list = []
 
 
 def convert_state(state):
-    ic(state)
+    # ic(state)
     statelist = [*state["agent"],*state["target_platform"],*state["target_spring"]]
     statelist = np.array(statelist)
     statelist = statelist.reshape(1, -1)  # reshape to (1, 6)
