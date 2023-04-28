@@ -62,6 +62,9 @@ class DoodleJumpEnv(gym.Env):
         self.springs = springs
         self.prev_time = prev_time
         self.high_score = 0
+        self.scores = []
+        self.score_per_moves = []
+        self.moves_performed = 0
         
         self.new_platforms()
         
@@ -84,6 +87,22 @@ class DoodleJumpEnv(gym.Env):
 
         # Determine if the game is over
         done = self.is_game_over()
+        if done:
+            self.scores.append(self.player.score)
+            total = 0
+            for score in self.scores:
+                total += score
+            file = open('ppo-scores.txt', "a")
+            file.write(str(total/len(self.scores)) + '\n')
+            file.close()
+
+            self.score_per_moves.append(self.player.score/self.moves_performed)
+
+            file = open("ppo-scoresPerMove.txt", 'a')
+            file.write(str(sum(self.score_per_moves)/len(self.score_per_moves)) + '\n')
+            file.close()
+
+            self.moves_performed = 0
 
         # Get the new state
         state = self.get_state()
@@ -104,6 +123,7 @@ class DoodleJumpEnv(gym.Env):
         else:             move = (False, False)
         
         self.player.move(*move,self.time_scale)
+        self.moves_performed+=1
     
     def update_game_state(self):
         player = self.player
@@ -592,8 +612,10 @@ def train(agent, env, episodes, timesteps):
 
         states, actions, rewards, log_probs = [], [], [], []
 
-        for t in range(timesteps):
+        # for t in range(timesteps):
+        while True:
             if done:
+                
                 break
 
             action, log_prob = agent.choose_action(state)
