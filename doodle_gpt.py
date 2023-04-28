@@ -270,11 +270,11 @@ class DoodleJumpEnv(gym.Env):
         if self.is_game_over():
             reward -= 100
 
-        ic(
-            self.player.score,
-            self.high_score,
-            round(reward,1),
-        )
+        # ic(
+        #     self.player.score,
+        #     self.high_score,
+        #     round(reward,1),
+        # )
         return reward
     
     
@@ -392,10 +392,10 @@ class PPOAgent:
     def build_policy(self, state_size, action_size):
         policy = tf.keras.Sequential([
             tf.keras.layers.Dense(128, activation='relu', input_shape=(state_size,)),
-            # tf.keras.layers.Dense(50, activation='relu'),
+            tf.keras.layers.Dense(50, activation='relu'),
             # tf.keras.layers.Dense(25, activation='relu'),
             # tf.keras.layers.Dense(10, activation='relu'),
-            tf.keras.layers.Dense(action_size)
+            tf.keras.layers.Dense(action_size, activation='softmax')
         ])
         return policy
 
@@ -426,6 +426,7 @@ class PPOAgent:
                 logits = self.policy(state)
                 dist = tfp.distributions.Categorical(logits=logits)
                 new_log_prob = dist.log_prob(action)
+                ic(new_log_prob)
 
                 ratio = tf.exp(new_log_prob - old_log_prob)
                 loss = -tf.reduce_mean(tf.minimum(ratio * advantage, tf.clip_by_value(ratio, 1 - self.epsilon, 1 + self.epsilon) * advantage))
@@ -532,15 +533,16 @@ class Platform():
         self.x = random.randint(0, int(WIDTH - self.width))
         self.y = y
         # platform types
-        if score < 500:
-            self.type = 0
-        elif score < 1500:
+        if score < 20:
+            # self.type = 0
             self.type = random.choice([0, 0, 0, 0, 0, 0, 1, 1])
-        elif score < 2500:
+        elif score < 50:
+            self.type = random.choice([0, 0, 0, 0, 0, 0, 1, 1])
+        elif score < 100:
             self.type = random.choice([0, 0, 0, 0, 1, 1, 1, 1])
-        elif score < 3500:
+        elif score < 200:
             self.type = random.choice([0, 0, 0, 1, 1, 1, 1, 2])
-        elif score < 5000:
+        elif score < 300:
             self.type = random.choice([0, 0, 1, 1, 1, 2, 3])
         else:
             self.type = random.choice([1, 1, 1, 1, 1, 2, 3, 3])
