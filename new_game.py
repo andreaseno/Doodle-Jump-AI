@@ -388,6 +388,7 @@ high_score = read_high_score()
 scores = []
 avg_scores_times = []
 time_per_run = []
+score_per_move = []
 start_time = time.time()
 while True:
     simulate(player, platforms, springs, time_scale)
@@ -399,13 +400,17 @@ while True:
     if is_game_over(player):
         end_time = time.time()
         scores.append(player.score)
+        score_per_move.append(player.score/player.moves_performed)
         time_per_run.append(end_time-start_time)
         total = 0
         total_time = 0
+        total_moves = 0
         for score in scores:
             total += score
         for t in time_per_run:
             total_time += t
+        for accuracy in score_per_move:
+            total_moves += accuracy
         avg_scores_times.append(total/len(scores))
         # file = open('scores.txt', "a")
         # file.write(str(total/len(scores)) + '\n')
@@ -413,6 +418,9 @@ while True:
         # file = open('timePerRun.txt', "a")
         # file.write(str(total_time/len(time_per_run)) + '\n')
         # file.close()
+        file = open('scorePerMove.txt', "a")
+        file.write(str(total_moves/len(score_per_move)) + '\n')
+        file.close()
 
         player, platforms, springs, time_scale, prev_time = new_game()
         start_time = time.time()

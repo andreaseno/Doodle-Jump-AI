@@ -318,6 +318,8 @@ class DoodleJumpEnv(gym.Env):
         self.start_time = 0
         self.end_time = 0
         self.runtimes = []
+        self.score_per_moves = []
+        self.moves_performed = 0
         # Observations are dictionaries with the agent's and the target's location.
         # Each location is encoded as an element of {0, ..., `size`}^2, i.e. MultiDiscrete([size, size]).
         self.observation_space = spaces.Dict(
@@ -365,16 +367,20 @@ class DoodleJumpEnv(gym.Env):
             self.end_time = time.time()
             self.scores.append(self.player.score)
             self.runtimes.append(self.end_time-self.start_time)
-            ic(self.runtimes)
+            self.score_per_moves.append(self.player.score/self.moves_performed)
             self.player, self.platforms, self.springs, self.time_scale, self.prev_time = new_game()
             self.num_deaths += 1
             # file = open("scores2.txt", 'a')
             # file.write(str(sum(self.scores)/len(self.scores)) + '\n')
             # file.close()
-            file = open("timePerRun.txt", 'a')
-            file.write(str(sum(self.runtimes)/len(self.runtimes)) + '\n')
+            # file = open("timePerRun.txt", 'a')
+            # file.write(str(sum(self.runtimes)/len(self.runtimes)) + '\n')
+            # file.close()
+            file = open("scorePerMove2.txt", 'a')
+            file.write(str(sum(self.score_per_moves)/len(self.score_per_moves)) + '\n')
             file.close()
             self.start_time = time.time()
+            self.moves_performed = 0
             #  TODO add reset function to here if we want it to call env.reset() every time the doodle dies
         # update high score
         if self.player.score > self.high_score:
@@ -388,6 +394,7 @@ class DoodleJumpEnv(gym.Env):
         if (not toLeft and  not toRight) :self.player.move(1, self.time_scale)
         elif (toLeft and not toRight): self.player.move(0, self.time_scale)
         elif (toRight and not toLeft): self.player.move(2, self.time_scale)
+        self.moves_performed+=1
         # check if player go above half of screen's height
         if self.player.y < HEIGHT // 2 - self.player.height:
             movement = HEIGHT // 2 - self.player.height - self.player.y
