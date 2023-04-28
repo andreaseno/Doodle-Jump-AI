@@ -106,15 +106,29 @@ class Platform():
         self.x = random.randint(0, int(WIDTH - self.width))
         self.y = y
         # platform types
-        if score < 500:
-            self.type = 0
-        elif score < 1500:
+        # if score < 500:
+        #     self.type = 0
+        # elif score < 1500:
+        #     self.type = random.choice([0, 0, 0, 0, 0, 0, 1, 1])
+        # elif score < 2500:
+        #     self.type = random.choice([0, 0, 0, 0, 1, 1, 1, 1])
+        # elif score < 3500:
+        #     self.type = random.choice([0, 0, 0, 1, 1, 1, 1, 2])
+        # elif score < 5000:
+        #     self.type = random.choice([0, 0, 1, 1, 1, 2, 3])
+        # else:
+        #     self.type = random.choice([1, 1, 1, 1, 1, 2, 3, 3])
+        
+        if score < 20:
+            # self.type = 0
             self.type = random.choice([0, 0, 0, 0, 0, 0, 1, 1])
-        elif score < 2500:
+        elif score < 50:
+            self.type = random.choice([0, 0, 0, 0, 0, 0, 1, 1])
+        elif score < 100:
             self.type = random.choice([0, 0, 0, 0, 1, 1, 1, 1])
-        elif score < 3500:
+        elif score < 200:
             self.type = random.choice([0, 0, 0, 1, 1, 1, 1, 2])
-        elif score < 5000:
+        elif score < 300:
             self.type = random.choice([0, 0, 1, 1, 1, 2, 3])
         else:
             self.type = random.choice([1, 1, 1, 1, 1, 2, 3, 3])
