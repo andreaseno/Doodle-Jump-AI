@@ -416,9 +416,22 @@ class DoodleJumpEnv(gym.Env):
                 # , "target": self._target_location
                 }
     
+
     def _get_info(self):
         # TODO implement distance to nearest platform alg
-        return {"distance": 5}
+        distances = [99999]*len(self.platforms)
+        # get coords of player
+        x = self.player.x
+        y = self.player.y
+        for i in range(0,len(distances)-1): # for each platform
+            if (self.platforms[i].y > y): continue
+            distances[i] = math.abs(x-(self.platforms[i].x+self.platforms[i].width/2)) + math.abs(y-self.platforms[i].y)
+        pos = np.argmin(distances, axis=0)
+        return {"nearest": (self.platforms[pos[0]].x, self.platforms[pos[0]].y)}
+        # return {"distance": 5}
+
+
+
     def reset(self, seed=None, options=None):
         # We need the following line to seed self.np_random
         super().reset(seed=seed)
