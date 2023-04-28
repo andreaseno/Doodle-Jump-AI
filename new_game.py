@@ -1,4 +1,5 @@
 import pygame, sys, random, math, os, time
+random.seed(2023)
 
 RENDER = False
 # default resolution: 360 x 640
