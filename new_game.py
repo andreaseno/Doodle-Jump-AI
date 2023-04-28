@@ -113,21 +113,35 @@ class Platform():
         self.x = random.randint(0, int(WIDTH - self.width))
         self.y = y
         # platform types
-        if(RANDOM_AI):
-            self.type = 0
+        # if(RANDOM_AI):
+        #     self.type = 0
+        # else:
+        #     if score < 500:
+        #         self.type = 0
+        #     elif score < 1500:
+        #         self.type = random.choice([0, 0, 0, 0, 0, 0, 1, 1])
+        #     elif score < 2500:
+        #         self.type = random.choice([0, 0, 0, 0, 1, 1, 1, 1])
+        #     elif score < 3500:
+        #         self.type = random.choice([0, 0, 0, 1, 1, 1, 1, 2])
+        #     elif score < 5000:
+        #         self.type = random.choice([0, 0, 1, 1, 1, 2, 3])
+        #     else:
+        #         self.type = random.choice([1, 1, 1, 1, 1, 2, 3, 3])
+        
+        if score < 20:
+            # self.type = 0
+            self.type = random.choice([0, 0, 0, 0, 0, 0, 1, 1])
+        elif score < 50:
+            self.type = random.choice([0, 0, 0, 0, 0, 0, 1, 1])
+        elif score < 100:
+            self.type = random.choice([0, 0, 0, 0, 1, 1, 1, 1])
+        elif score < 200:
+            self.type = random.choice([0, 0, 0, 1, 1, 1, 1, 2])
+        elif score < 300:
+            self.type = random.choice([0, 0, 1, 1, 1, 2, 3])
         else:
-            if score < 500:
-                self.type = 0
-            elif score < 1500:
-                self.type = random.choice([0, 0, 0, 0, 0, 0, 1, 1])
-            elif score < 2500:
-                self.type = random.choice([0, 0, 0, 0, 1, 1, 1, 1])
-            elif score < 3500:
-                self.type = random.choice([0, 0, 0, 1, 1, 1, 1, 2])
-            elif score < 5000:
-                self.type = random.choice([0, 0, 1, 1, 1, 2, 3])
-            else:
-                self.type = random.choice([1, 1, 1, 1, 1, 2, 3, 3])
+            self.type = random.choice([1, 1, 1, 1, 1, 2, 3, 3])
 
         # decide if platform has spring on top
         # decide initial direction the platform if it moves
