@@ -54,7 +54,7 @@ class agent():
         sur1 = []
         sur2 = []
         
-        for pb, t, op,a  in zip(probability, adv, old_probs, actions):
+        for pb, t, op, a  in zip(probability, adv, old_probs, actions):
                         t =  tf.constant(t)
                         #op =  tf.constant(op)
                         #print(f"t{t}")

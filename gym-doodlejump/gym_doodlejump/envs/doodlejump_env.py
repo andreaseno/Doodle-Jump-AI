@@ -412,7 +412,9 @@ class DoodleJumpEnv(gym.Env):
     
 
     def _get_obs(self):
-        return {"agent": self._agent_location
+        return {"agent": self._agent_location,
+                "target_platform": 5,
+                "target_string": 5
                 # "target"
                 # TODO make "target" be nearest valid platform
                 # , "target": self._target_location
