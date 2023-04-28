@@ -6,7 +6,7 @@ from icecream import ic
 
 
 
-RENDER = True
+RENDER = False
 # default resolution: 360 x 640
 RESOLUTION = WIDTH, HEIGHT = 360, 640
 TITLE = "Doodle Jump"
@@ -306,14 +306,15 @@ def read_high_score():
 
 class DoodleJumpEnv(gym.Env):
     metadata = {"render_modes": ["human", "rgb_array"], "render_fps": 4}
-
+    def get_scores(self):
+        return self.scores
     def __init__(self, render_mode=None):
         
         # initialize all the doodlejump game objects
         self.player, self.platforms, self.springs, self.time_scale, self.prev_time = new_game()
         self.high_score = read_high_score()
         self.num_deaths = 0
-
+        self.scores = []
         # Observations are dictionaries with the agent's and the target's location.
         # Each location is encoded as an element of {0, ..., `size`}^2, i.e. MultiDiscrete([size, size]).
         self.observation_space = spaces.Dict(
@@ -358,6 +359,7 @@ class DoodleJumpEnv(gym.Env):
 
         # triggered when the doodle dies
         if is_game_over(self.player):
+            self.scores.append(self.player.score)
             self.player, self.platforms, self.springs, self.time_scale, self.prev_time = new_game()
             self.num_deaths += 1
             #  TODO add reset function to here if we want it to call env.reset() every time the doodle dies
