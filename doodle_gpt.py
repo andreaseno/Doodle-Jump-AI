@@ -3,7 +3,7 @@ os.environ['PYGAME_HIDE_SUPPORT_PROMPT'] = 'True'
 
 import pygame, sys, random, math, time, numpy as np
 
-SEED_NUM = 2024
+SEED_NUM = 2023
 random.seed(SEED_NUM)
 
 from icecream import ic
@@ -61,10 +61,11 @@ class DoodleJumpEnv(gym.Env):
         self.time_scale = time_scale
         self.springs = springs
         self.prev_time = prev_time
-        self.high_score = 0
+        self.high_score = self.read_high_score()
         self.scores = []
         self.score_per_moves = []
         self.moves_performed = 0
+        self.prev_score = 0
         
         self.new_platforms()
         
@@ -107,7 +108,7 @@ class DoodleJumpEnv(gym.Env):
         # Get the new state
         state = self.get_state()
         
-        if RENDER:
+        if RENDER and not done:
             self.render()
 
         return state, reward, done
@@ -127,6 +128,9 @@ class DoodleJumpEnv(gym.Env):
     
     def update_game_state(self):
         player = self.player
+        
+        if self.player.score > self.high_score:
+            self.high_score = self.player.score
         
         # check if player go above half of screen's height
         if player.y < HEIGHT // 2 - player.height:
@@ -202,8 +206,13 @@ class DoodleJumpEnv(gym.Env):
         self.time_scale = time_scale
         self.springs = springs
         self.prev_time = prev_time
-        self.high_score = 0
         self.new_platforms()
+        self.prev_score = 0
+        
+        file = open(file_name, "w")
+        file.write(str(int(self.high_score)))
+        file.close()
+        self.high_score = self.read_high_score()
     
     def reset_platforms(self):
         pass
@@ -241,7 +250,7 @@ class DoodleJumpEnv(gym.Env):
     
     def calculate_reward(self, action):
         # Reward for vertical progress (higher jumps)
-        reward = self.player.score - self.high_score
+        reward = self.player.score - self.prev_score
         
         # Penalize for moving in one direction for too long
         if action == self.prev_action:
@@ -255,7 +264,7 @@ class DoodleJumpEnv(gym.Env):
         self.prev_action = action
         
         if reward > 0:
-            self.high_score = self.player.score
+            self.prev_score = self.player.score
 
         # Penalty for falling off the screen
         if self.is_game_over():
@@ -270,7 +279,12 @@ class DoodleJumpEnv(gym.Env):
     
     
     def is_game_over(self):
-        if self.player.y > HEIGHT:
+        player = self.player
+        if player.score == 0 and player.y + Player.height > HEIGHT - 2:
+            player.y = HEIGHT - 2 - Player.height
+            player.jump()
+            return False
+        elif player.y > HEIGHT:
             return True
         return False
     
@@ -377,10 +391,10 @@ class PPOAgent:
 
     def build_policy(self, state_size, action_size):
         policy = tf.keras.Sequential([
-            tf.keras.layers.Dense(50, activation='relu', input_shape=(state_size,)),
-            tf.keras.layers.Dense(50, activation='relu'),
-            tf.keras.layers.Dense(25, activation='relu'),
-            tf.keras.layers.Dense(10, activation='relu'),
+            tf.keras.layers.Dense(128, activation='relu', input_shape=(state_size,)),
+            # tf.keras.layers.Dense(50, activation='relu'),
+            # tf.keras.layers.Dense(25, activation='relu'),
+            # tf.keras.layers.Dense(10, activation='relu'),
             tf.keras.layers.Dense(action_size)
         ])
         return policy
@@ -605,6 +619,7 @@ class Spring():
             
 
 def train(agent, env, episodes, timesteps):
+    os.remove(file_name)
     for episode in range(episodes):
         state = env.reset()
         done = False
@@ -647,6 +662,6 @@ if __name__ == "__main__":
     agent = PPOAgent(state_size, action_size, gamma, epsilon, lr)
 
     episodes = 2000
-    timesteps = 1000
+    timesteps = 100
 
     train(agent, env, episodes, timesteps)
