@@ -309,6 +309,7 @@ class DoodleJumpEnv(gym.Env):
         # initialize all the doodlejump game objects
         self.player, self.platforms, self.springs, self.time_scale, self.prev_time = new_game()
         self.high_score = read_high_score()
+        self.num_deaths = 0
 
         # Observations are dictionaries with the agent's and the target's location.
         # Each location is encoded as an element of {0, ..., `size`}^2, i.e. MultiDiscrete([size, size]).
@@ -342,6 +343,7 @@ class DoodleJumpEnv(gym.Env):
         # triggered when the doodle dies
         if is_game_over(self.player):
             self.player, self.platforms, self.springs, self.time_scale, self.prev_time = new_game()
+            self.num_deaths += 1
             #  TODO add reset function to here if we want it to call env.reset() every time the doodle dies
         # update high score
         if self.player.score > self.high_score:
@@ -450,8 +452,12 @@ class DoodleJumpEnv(gym.Env):
         # TODO implement termination requirements (right now automatically false)
         # ideas: terminate after a certain height is reached, terminate after a certain reward threshhold, 
         #        terminate whenever we want to update weights 
-        # terminated = np.array_equal(self._agent_location, self._target_location)
         terminated = False
+        if(self.num_deaths == 10):
+            terminated = True
+            self.num_deaths = 0
+        # terminated = np.array_equal(self._agent_location, self._target_location)
+        
         reward = 1 if terminated else 0  # Binary sparse rewards
         observation = self._get_obs()
         info = self._get_info()
