@@ -1,0 +1,4926 @@
+/Users/phan/miniconda3/lib/python3.10/site-packages/gym/spaces/box.py:127: UserWarning: [33mWARN: Box bound precision lowered by casting to float64[0m
+  logger.warn(f"Box bound precision lowered by casting to {self.dtype}")
+/Users/phan/miniconda3/lib/python3.10/site-packages/gym/utils/passive_env_checker.py:137: UserWarning: [33mWARN: The obs returned by the `reset()` method was expecting a numpy array, actual type: <class 'list'>[0m
+  logger.warn(
+/Users/phan/miniconda3/lib/python3.10/site-packages/gym/spaces/box.py:227: UserWarning: [33mWARN: Casting input x to numpy array.[0m
+  logger.warn("Casting input x to numpy array.")
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 0
+/Users/phan/miniconda3/lib/python3.10/site-packages/gym/utils/passive_env_checker.py:233: DeprecationWarning: `np.bool8` is a deprecated alias for `np.bool_`.  (Deprecated NumPy 1.24)
+  if not isinstance(terminated, (bool, np.bool8)):
+/Users/phan/miniconda3/lib/python3.10/site-packages/gym/utils/passive_env_checker.py:137: UserWarning: [33mWARN: The obs returned by the `step()` method was expecting a numpy array, actual type: <class 'list'>[0m
+  logger.warn(
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 1
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 2
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 3
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 4
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 5
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 6
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 7
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 8
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 9
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 9
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 10
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 11
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 12
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 12
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 13
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 14
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 14
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 15
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 15
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 16
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 16
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 17
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 17
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 17
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 17
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 18
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 18
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 18
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 18
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 18
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 18
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 18
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 18
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 18
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>
+ic| round(score): 18
+ic| probability: <tf.Tensor: shape=(1, 2), dtype=float32, numpy=array([[0., 1.]], dtype=float32)>
+ic| entropy: <tf.Tensor: shape=(), dtype=float32, numpy=nan>
+ic| old_probs: array([[0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.]], dtype=float32)
+ic| actions: array([1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+                    1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+                    1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+                    1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+                    1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+                    1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], dtype=int32)
+ic| adv: <tf.Tensor: shape=(128,), dtype=float32, numpy=
+         array([-1.0953873 , -1.0887988 , -0.10663108, -0.04800299,  0.01371121,
+                 0.07867316,  0.14705482, -0.8325546 , -0.81213266, -0.79063594,
+                -0.7680079 , -0.7441891 , -0.7191165 , -0.6927242 , -0.66494316,
+                -0.63569933, -0.60491705, -0.5725142 , -0.5384058 ,  0.03256206,
+                 0.09851662,  0.16794203,  0.24102172,  0.31794775,  0.39892203,
+                 0.48415843, -1.0693151 , -1.061354  , -1.0529746 , -1.0441537 ,
+                -1.0348687 , -1.025095  , -1.014807  , -1.0039775 , -0.9925778 ,
+                -0.98057836, -0.9679471 , -0.95465136, -0.9406553 , -0.9259234 ,
+                -0.9104156 , -0.89409196, -0.8769085 , -0.85882115, -0.83978206,
+                -0.8197405 , -0.7986443 , -0.7764374 , -0.7530621 , -0.7284565 ,
+                -0.70255613, -0.6752921 , -0.6465935 , -0.61638427, -0.5845849 ,
+                -0.5511121 , -0.51587784, -0.47878835, -0.4397474 , -0.39865157,
+                -0.35539258, -0.30985722, -0.2619247 , -0.21146986, -0.15835935,
+                -0.10245386, -0.04360537,  0.01834012,  0.08354533,  0.1521833 ,
+                 0.22443335,  0.30048597,  0.38054165,  0.46481046,  0.5535147 ,
+                 0.64688766,  0.7451749 ,  0.84863496,  0.9575405 ,  1.0721778 ,
+                 1.0299827 ,  1.1484327 ,  1.2731172 ,  1.4043638 ,  1.542518  ,
+                 1.6879438 ,  1.3271896 ,  1.461282  ,  1.602432  ,  1.7510111 ,
+                 0.19376944,  0.26820838,  0.3465651 ,  0.42904583,  0.36570245,
+                 0.3216895 ,  0.30862886,  0.2930376 ,  2.205694  ,  2.2822042 ,
+                 2.361043  ,  2.4423342 ,  2.5344768 ,  2.6348991 ,  2.7383358 ,
+                 2.8449464 ,  2.9548995 ,  0.34241316,  0.29691687,  0.24780072,
+                 0.19488177,  0.13795374,  0.07680468,  0.01122017, -0.0590414 ,
+                -0.13421977, -0.2145802 , -0.30039343, -0.3919433 , -0.48953617,
+                -0.5934811 , -0.704128  , -0.82181525, -0.94691837, -1.0798285 ,
+                -1.2209566 , -1.2205691 , -1.2205691 ], dtype=float32)>
+ic| probability: <tf.Tensor: shape=(1, 2), dtype=float32, numpy=array([[nan, nan]], dtype=float32)>
+ic| entropy: <tf.Tensor: shape=(), dtype=float32, numpy=nan>
+ic| old_probs: array([[0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.]], dtype=float32)
+ic| actions: array([1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+                    1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+                    1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+                    1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+                    1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+                    1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], dtype=int32)
+ic| adv: <tf.Tensor: shape=(128,), dtype=float32, numpy=
+         array([-1.0953873 , -1.0887988 , -0.10663108, -0.04800299,  0.01371121,
+                 0.07867316,  0.14705482, -0.8325546 , -0.81213266, -0.79063594,
+                -0.7680079 , -0.7441891 , -0.7191165 , -0.6927242 , -0.66494316,
+                -0.63569933, -0.60491705, -0.5725142 , -0.5384058 ,  0.03256206,
+                 0.09851662,  0.16794203,  0.24102172,  0.31794775,  0.39892203,
+                 0.48415843, -1.0693151 , -1.061354  , -1.0529746 , -1.0441537 ,
+                -1.0348687 , -1.025095  , -1.014807  , -1.0039775 , -0.9925778 ,
+                -0.98057836, -0.9679471 , -0.95465136, -0.9406553 , -0.9259234 ,
+                -0.9104156 , -0.89409196, -0.8769085 , -0.85882115, -0.83978206,
+                -0.8197405 , -0.7986443 , -0.7764374 , -0.7530621 , -0.7284565 ,
+                -0.70255613, -0.6752921 , -0.6465935 , -0.61638427, -0.5845849 ,
+                -0.5511121 , -0.51587784, -0.47878835, -0.4397474 , -0.39865157,
+                -0.35539258, -0.30985722, -0.2619247 , -0.21146986, -0.15835935,
+                -0.10245386, -0.04360537,  0.01834012,  0.08354533,  0.1521833 ,
+                 0.22443335,  0.30048597,  0.38054165,  0.46481046,  0.5535147 ,
+                 0.64688766,  0.7451749 ,  0.84863496,  0.9575405 ,  1.0721778 ,
+                 1.0299827 ,  1.1484327 ,  1.2731172 ,  1.4043638 ,  1.542518  ,
+                 1.6879438 ,  1.3271896 ,  1.461282  ,  1.602432  ,  1.7510111 ,
+                 0.19376944,  0.26820838,  0.3465651 ,  0.42904583,  0.36570245,
+                 0.3216895 ,  0.30862886,  0.2930376 ,  2.205694  ,  2.2822042 ,
+                 2.361043  ,  2.4423342 ,  2.5344768 ,  2.6348991 ,  2.7383358 ,
+                 2.8449464 ,  2.9548995 ,  0.34241316,  0.29691687,  0.24780072,
+                 0.19488177,  0.13795374,  0.07680468,  0.01122017, -0.0590414 ,
+                -0.13421977, -0.2145802 , -0.30039343, -0.3919433 , -0.48953617,
+                -0.5934811 , -0.704128  , -0.82181525, -0.94691837, -1.0798285 ,
+                -1.2209566 , -1.2205691 , -1.2205691 ], dtype=float32)>
+ic| probability: <tf.Tensor: shape=(1, 2), dtype=float32, numpy=array([[nan, nan]], dtype=float32)>
+ic| entropy: <tf.Tensor: shape=(), dtype=float32, numpy=nan>
+ic| old_probs: array([[0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.]], dtype=float32)
+ic| actions: array([1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+                    1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+                    1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+                    1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+                    1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+                    1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], dtype=int32)
+ic| adv: <tf.Tensor: shape=(128,), dtype=float32, numpy=
+         array([-1.0953873 , -1.0887988 , -0.10663108, -0.04800299,  0.01371121,
+                 0.07867316,  0.14705482, -0.8325546 , -0.81213266, -0.79063594,
+                -0.7680079 , -0.7441891 , -0.7191165 , -0.6927242 , -0.66494316,
+                -0.63569933, -0.60491705, -0.5725142 , -0.5384058 ,  0.03256206,
+                 0.09851662,  0.16794203,  0.24102172,  0.31794775,  0.39892203,
+                 0.48415843, -1.0693151 , -1.061354  , -1.0529746 , -1.0441537 ,
+                -1.0348687 , -1.025095  , -1.014807  , -1.0039775 , -0.9925778 ,
+                -0.98057836, -0.9679471 , -0.95465136, -0.9406553 , -0.9259234 ,
+                -0.9104156 , -0.89409196, -0.8769085 , -0.85882115, -0.83978206,
+                -0.8197405 , -0.7986443 , -0.7764374 , -0.7530621 , -0.7284565 ,
+                -0.70255613, -0.6752921 , -0.6465935 , -0.61638427, -0.5845849 ,
+                -0.5511121 , -0.51587784, -0.47878835, -0.4397474 , -0.39865157,
+                -0.35539258, -0.30985722, -0.2619247 , -0.21146986, -0.15835935,
+                -0.10245386, -0.04360537,  0.01834012,  0.08354533,  0.1521833 ,
+                 0.22443335,  0.30048597,  0.38054165,  0.46481046,  0.5535147 ,
+                 0.64688766,  0.7451749 ,  0.84863496,  0.9575405 ,  1.0721778 ,
+                 1.0299827 ,  1.1484327 ,  1.2731172 ,  1.4043638 ,  1.542518  ,
+                 1.6879438 ,  1.3271896 ,  1.461282  ,  1.602432  ,  1.7510111 ,
+                 0.19376944,  0.26820838,  0.3465651 ,  0.42904583,  0.36570245,
+                 0.3216895 ,  0.30862886,  0.2930376 ,  2.205694  ,  2.2822042 ,
+                 2.361043  ,  2.4423342 ,  2.5344768 ,  2.6348991 ,  2.7383358 ,
+                 2.8449464 ,  2.9548995 ,  0.34241316,  0.29691687,  0.24780072,
+                 0.19488177,  0.13795374,  0.07680468,  0.01122017, -0.0590414 ,
+                -0.13421977, -0.2145802 , -0.30039343, -0.3919433 , -0.48953617,
+                -0.5934811 , -0.704128  , -0.82181525, -0.94691837, -1.0798285 ,
+                -1.2209566 , -1.2205691 , -1.2205691 ], dtype=float32)>
+ic| probability: <tf.Tensor: shape=(1, 2), dtype=float32, numpy=array([[nan, nan]], dtype=float32)>
+ic| entropy: <tf.Tensor: shape=(), dtype=float32, numpy=nan>
+ic| old_probs: array([[0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.]], dtype=float32)
+ic| actions: array([1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+                    1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+                    1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+                    1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+                    1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+                    1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], dtype=int32)
+ic| adv: <tf.Tensor: shape=(128,), dtype=float32, numpy=
+         array([-1.0953873 , -1.0887988 , -0.10663108, -0.04800299,  0.01371121,
+                 0.07867316,  0.14705482, -0.8325546 , -0.81213266, -0.79063594,
+                -0.7680079 , -0.7441891 , -0.7191165 , -0.6927242 , -0.66494316,
+                -0.63569933, -0.60491705, -0.5725142 , -0.5384058 ,  0.03256206,
+                 0.09851662,  0.16794203,  0.24102172,  0.31794775,  0.39892203,
+                 0.48415843, -1.0693151 , -1.061354  , -1.0529746 , -1.0441537 ,
+                -1.0348687 , -1.025095  , -1.014807  , -1.0039775 , -0.9925778 ,
+                -0.98057836, -0.9679471 , -0.95465136, -0.9406553 , -0.9259234 ,
+                -0.9104156 , -0.89409196, -0.8769085 , -0.85882115, -0.83978206,
+                -0.8197405 , -0.7986443 , -0.7764374 , -0.7530621 , -0.7284565 ,
+                -0.70255613, -0.6752921 , -0.6465935 , -0.61638427, -0.5845849 ,
+                -0.5511121 , -0.51587784, -0.47878835, -0.4397474 , -0.39865157,
+                -0.35539258, -0.30985722, -0.2619247 , -0.21146986, -0.15835935,
+                -0.10245386, -0.04360537,  0.01834012,  0.08354533,  0.1521833 ,
+                 0.22443335,  0.30048597,  0.38054165,  0.46481046,  0.5535147 ,
+                 0.64688766,  0.7451749 ,  0.84863496,  0.9575405 ,  1.0721778 ,
+                 1.0299827 ,  1.1484327 ,  1.2731172 ,  1.4043638 ,  1.542518  ,
+                 1.6879438 ,  1.3271896 ,  1.461282  ,  1.602432  ,  1.7510111 ,
+                 0.19376944,  0.26820838,  0.3465651 ,  0.42904583,  0.36570245,
+                 0.3216895 ,  0.30862886,  0.2930376 ,  2.205694  ,  2.2822042 ,
+                 2.361043  ,  2.4423342 ,  2.5344768 ,  2.6348991 ,  2.7383358 ,
+                 2.8449464 ,  2.9548995 ,  0.34241316,  0.29691687,  0.24780072,
+                 0.19488177,  0.13795374,  0.07680468,  0.01122017, -0.0590414 ,
+                -0.13421977, -0.2145802 , -0.30039343, -0.3919433 , -0.48953617,
+                -0.5934811 , -0.704128  , -0.82181525, -0.94691837, -1.0798285 ,
+                -1.2209566 , -1.2205691 , -1.2205691 ], dtype=float32)>
+ic| probability: <tf.Tensor: shape=(1, 2), dtype=float32, numpy=array([[nan, nan]], dtype=float32)>
+ic| entropy: <tf.Tensor: shape=(), dtype=float32, numpy=nan>
+ic| old_probs: array([[0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.]], dtype=float32)
+ic| actions: array([1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+                    1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+                    1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+                    1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+                    1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+                    1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], dtype=int32)
+ic| adv: <tf.Tensor: shape=(128,), dtype=float32, numpy=
+         array([-1.0953873 , -1.0887988 , -0.10663108, -0.04800299,  0.01371121,
+                 0.07867316,  0.14705482, -0.8325546 , -0.81213266, -0.79063594,
+                -0.7680079 , -0.7441891 , -0.7191165 , -0.6927242 , -0.66494316,
+                -0.63569933, -0.60491705, -0.5725142 , -0.5384058 ,  0.03256206,
+                 0.09851662,  0.16794203,  0.24102172,  0.31794775,  0.39892203,
+                 0.48415843, -1.0693151 , -1.061354  , -1.0529746 , -1.0441537 ,
+                -1.0348687 , -1.025095  , -1.014807  , -1.0039775 , -0.9925778 ,
+                -0.98057836, -0.9679471 , -0.95465136, -0.9406553 , -0.9259234 ,
+                -0.9104156 , -0.89409196, -0.8769085 , -0.85882115, -0.83978206,
+                -0.8197405 , -0.7986443 , -0.7764374 , -0.7530621 , -0.7284565 ,
+                -0.70255613, -0.6752921 , -0.6465935 , -0.61638427, -0.5845849 ,
+                -0.5511121 , -0.51587784, -0.47878835, -0.4397474 , -0.39865157,
+                -0.35539258, -0.30985722, -0.2619247 , -0.21146986, -0.15835935,
+                -0.10245386, -0.04360537,  0.01834012,  0.08354533,  0.1521833 ,
+                 0.22443335,  0.30048597,  0.38054165,  0.46481046,  0.5535147 ,
+                 0.64688766,  0.7451749 ,  0.84863496,  0.9575405 ,  1.0721778 ,
+                 1.0299827 ,  1.1484327 ,  1.2731172 ,  1.4043638 ,  1.542518  ,
+                 1.6879438 ,  1.3271896 ,  1.461282  ,  1.602432  ,  1.7510111 ,
+                 0.19376944,  0.26820838,  0.3465651 ,  0.42904583,  0.36570245,
+                 0.3216895 ,  0.30862886,  0.2930376 ,  2.205694  ,  2.2822042 ,
+                 2.361043  ,  2.4423342 ,  2.5344768 ,  2.6348991 ,  2.7383358 ,
+                 2.8449464 ,  2.9548995 ,  0.34241316,  0.29691687,  0.24780072,
+                 0.19488177,  0.13795374,  0.07680468,  0.01122017, -0.0590414 ,
+                -0.13421977, -0.2145802 , -0.30039343, -0.3919433 , -0.48953617,
+                -0.5934811 , -0.704128  , -0.82181525, -0.94691837, -1.0798285 ,
+                -1.2209566 , -1.2205691 , -1.2205691 ], dtype=float32)>
+ic| probability: <tf.Tensor: shape=(1, 2), dtype=float32, numpy=array([[nan, nan]], dtype=float32)>
+ic| entropy: <tf.Tensor: shape=(), dtype=float32, numpy=nan>
+ic| old_probs: array([[0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.]], dtype=float32)
+ic| actions: array([1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+                    1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+                    1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+                    1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+                    1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+                    1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], dtype=int32)
+ic| adv: <tf.Tensor: shape=(128,), dtype=float32, numpy=
+         array([-1.0953873 , -1.0887988 , -0.10663108, -0.04800299,  0.01371121,
+                 0.07867316,  0.14705482, -0.8325546 , -0.81213266, -0.79063594,
+                -0.7680079 , -0.7441891 , -0.7191165 , -0.6927242 , -0.66494316,
+                -0.63569933, -0.60491705, -0.5725142 , -0.5384058 ,  0.03256206,
+                 0.09851662,  0.16794203,  0.24102172,  0.31794775,  0.39892203,
+                 0.48415843, -1.0693151 , -1.061354  , -1.0529746 , -1.0441537 ,
+                -1.0348687 , -1.025095  , -1.014807  , -1.0039775 , -0.9925778 ,
+                -0.98057836, -0.9679471 , -0.95465136, -0.9406553 , -0.9259234 ,
+                -0.9104156 , -0.89409196, -0.8769085 , -0.85882115, -0.83978206,
+                -0.8197405 , -0.7986443 , -0.7764374 , -0.7530621 , -0.7284565 ,
+                -0.70255613, -0.6752921 , -0.6465935 , -0.61638427, -0.5845849 ,
+                -0.5511121 , -0.51587784, -0.47878835, -0.4397474 , -0.39865157,
+                -0.35539258, -0.30985722, -0.2619247 , -0.21146986, -0.15835935,
+                -0.10245386, -0.04360537,  0.01834012,  0.08354533,  0.1521833 ,
+                 0.22443335,  0.30048597,  0.38054165,  0.46481046,  0.5535147 ,
+                 0.64688766,  0.7451749 ,  0.84863496,  0.9575405 ,  1.0721778 ,
+                 1.0299827 ,  1.1484327 ,  1.2731172 ,  1.4043638 ,  1.542518  ,
+                 1.6879438 ,  1.3271896 ,  1.461282  ,  1.602432  ,  1.7510111 ,
+                 0.19376944,  0.26820838,  0.3465651 ,  0.42904583,  0.36570245,
+                 0.3216895 ,  0.30862886,  0.2930376 ,  2.205694  ,  2.2822042 ,
+                 2.361043  ,  2.4423342 ,  2.5344768 ,  2.6348991 ,  2.7383358 ,
+                 2.8449464 ,  2.9548995 ,  0.34241316,  0.29691687,  0.24780072,
+                 0.19488177,  0.13795374,  0.07680468,  0.01122017, -0.0590414 ,
+                -0.13421977, -0.2145802 , -0.30039343, -0.3919433 , -0.48953617,
+                -0.5934811 , -0.704128  , -0.82181525, -0.94691837, -1.0798285 ,
+                -1.2209566 , -1.2205691 , -1.2205691 ], dtype=float32)>
+ic| probability: <tf.Tensor: shape=(1, 2), dtype=float32, numpy=array([[nan, nan]], dtype=float32)>
+ic| entropy: <tf.Tensor: shape=(), dtype=float32, numpy=nan>
+ic| old_probs: array([[0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.]], dtype=float32)
+ic| actions: array([1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+                    1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+                    1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+                    1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+                    1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+                    1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], dtype=int32)
+ic| adv: <tf.Tensor: shape=(128,), dtype=float32, numpy=
+         array([-1.0953873 , -1.0887988 , -0.10663108, -0.04800299,  0.01371121,
+                 0.07867316,  0.14705482, -0.8325546 , -0.81213266, -0.79063594,
+                -0.7680079 , -0.7441891 , -0.7191165 , -0.6927242 , -0.66494316,
+                -0.63569933, -0.60491705, -0.5725142 , -0.5384058 ,  0.03256206,
+                 0.09851662,  0.16794203,  0.24102172,  0.31794775,  0.39892203,
+                 0.48415843, -1.0693151 , -1.061354  , -1.0529746 , -1.0441537 ,
+                -1.0348687 , -1.025095  , -1.014807  , -1.0039775 , -0.9925778 ,
+                -0.98057836, -0.9679471 , -0.95465136, -0.9406553 , -0.9259234 ,
+                -0.9104156 , -0.89409196, -0.8769085 , -0.85882115, -0.83978206,
+                -0.8197405 , -0.7986443 , -0.7764374 , -0.7530621 , -0.7284565 ,
+                -0.70255613, -0.6752921 , -0.6465935 , -0.61638427, -0.5845849 ,
+                -0.5511121 , -0.51587784, -0.47878835, -0.4397474 , -0.39865157,
+                -0.35539258, -0.30985722, -0.2619247 , -0.21146986, -0.15835935,
+                -0.10245386, -0.04360537,  0.01834012,  0.08354533,  0.1521833 ,
+                 0.22443335,  0.30048597,  0.38054165,  0.46481046,  0.5535147 ,
+                 0.64688766,  0.7451749 ,  0.84863496,  0.9575405 ,  1.0721778 ,
+                 1.0299827 ,  1.1484327 ,  1.2731172 ,  1.4043638 ,  1.542518  ,
+                 1.6879438 ,  1.3271896 ,  1.461282  ,  1.602432  ,  1.7510111 ,
+                 0.19376944,  0.26820838,  0.3465651 ,  0.42904583,  0.36570245,
+                 0.3216895 ,  0.30862886,  0.2930376 ,  2.205694  ,  2.2822042 ,
+                 2.361043  ,  2.4423342 ,  2.5344768 ,  2.6348991 ,  2.7383358 ,
+                 2.8449464 ,  2.9548995 ,  0.34241316,  0.29691687,  0.24780072,
+                 0.19488177,  0.13795374,  0.07680468,  0.01122017, -0.0590414 ,
+                -0.13421977, -0.2145802 , -0.30039343, -0.3919433 , -0.48953617,
+                -0.5934811 , -0.704128  , -0.82181525, -0.94691837, -1.0798285 ,
+                -1.2209566 , -1.2205691 , -1.2205691 ], dtype=float32)>
+ic| probability: <tf.Tensor: shape=(1, 2), dtype=float32, numpy=array([[nan, nan]], dtype=float32)>
+ic| entropy: <tf.Tensor: shape=(), dtype=float32, numpy=nan>
+ic| old_probs: array([[0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.]], dtype=float32)
+ic| actions: array([1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+                    1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+                    1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+                    1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+                    1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+                    1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], dtype=int32)
+ic| adv: <tf.Tensor: shape=(128,), dtype=float32, numpy=
+         array([-1.0953873 , -1.0887988 , -0.10663108, -0.04800299,  0.01371121,
+                 0.07867316,  0.14705482, -0.8325546 , -0.81213266, -0.79063594,
+                -0.7680079 , -0.7441891 , -0.7191165 , -0.6927242 , -0.66494316,
+                -0.63569933, -0.60491705, -0.5725142 , -0.5384058 ,  0.03256206,
+                 0.09851662,  0.16794203,  0.24102172,  0.31794775,  0.39892203,
+                 0.48415843, -1.0693151 , -1.061354  , -1.0529746 , -1.0441537 ,
+                -1.0348687 , -1.025095  , -1.014807  , -1.0039775 , -0.9925778 ,
+                -0.98057836, -0.9679471 , -0.95465136, -0.9406553 , -0.9259234 ,
+                -0.9104156 , -0.89409196, -0.8769085 , -0.85882115, -0.83978206,
+                -0.8197405 , -0.7986443 , -0.7764374 , -0.7530621 , -0.7284565 ,
+                -0.70255613, -0.6752921 , -0.6465935 , -0.61638427, -0.5845849 ,
+                -0.5511121 , -0.51587784, -0.47878835, -0.4397474 , -0.39865157,
+                -0.35539258, -0.30985722, -0.2619247 , -0.21146986, -0.15835935,
+                -0.10245386, -0.04360537,  0.01834012,  0.08354533,  0.1521833 ,
+                 0.22443335,  0.30048597,  0.38054165,  0.46481046,  0.5535147 ,
+                 0.64688766,  0.7451749 ,  0.84863496,  0.9575405 ,  1.0721778 ,
+                 1.0299827 ,  1.1484327 ,  1.2731172 ,  1.4043638 ,  1.542518  ,
+                 1.6879438 ,  1.3271896 ,  1.461282  ,  1.602432  ,  1.7510111 ,
+                 0.19376944,  0.26820838,  0.3465651 ,  0.42904583,  0.36570245,
+                 0.3216895 ,  0.30862886,  0.2930376 ,  2.205694  ,  2.2822042 ,
+                 2.361043  ,  2.4423342 ,  2.5344768 ,  2.6348991 ,  2.7383358 ,
+                 2.8449464 ,  2.9548995 ,  0.34241316,  0.29691687,  0.24780072,
+                 0.19488177,  0.13795374,  0.07680468,  0.01122017, -0.0590414 ,
+                -0.13421977, -0.2145802 , -0.30039343, -0.3919433 , -0.48953617,
+                -0.5934811 , -0.704128  , -0.82181525, -0.94691837, -1.0798285 ,
+                -1.2209566 , -1.2205691 , -1.2205691 ], dtype=float32)>
+ic| probability: <tf.Tensor: shape=(1, 2), dtype=float32, numpy=array([[nan, nan]], dtype=float32)>
+ic| entropy: <tf.Tensor: shape=(), dtype=float32, numpy=nan>
+ic| old_probs: array([[0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.]], dtype=float32)
+ic| actions: array([1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+                    1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+                    1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+                    1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+                    1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+                    1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], dtype=int32)
+ic| adv: <tf.Tensor: shape=(128,), dtype=float32, numpy=
+         array([-1.0953873 , -1.0887988 , -0.10663108, -0.04800299,  0.01371121,
+                 0.07867316,  0.14705482, -0.8325546 , -0.81213266, -0.79063594,
+                -0.7680079 , -0.7441891 , -0.7191165 , -0.6927242 , -0.66494316,
+                -0.63569933, -0.60491705, -0.5725142 , -0.5384058 ,  0.03256206,
+                 0.09851662,  0.16794203,  0.24102172,  0.31794775,  0.39892203,
+                 0.48415843, -1.0693151 , -1.061354  , -1.0529746 , -1.0441537 ,
+                -1.0348687 , -1.025095  , -1.014807  , -1.0039775 , -0.9925778 ,
+                -0.98057836, -0.9679471 , -0.95465136, -0.9406553 , -0.9259234 ,
+                -0.9104156 , -0.89409196, -0.8769085 , -0.85882115, -0.83978206,
+                -0.8197405 , -0.7986443 , -0.7764374 , -0.7530621 , -0.7284565 ,
+                -0.70255613, -0.6752921 , -0.6465935 , -0.61638427, -0.5845849 ,
+                -0.5511121 , -0.51587784, -0.47878835, -0.4397474 , -0.39865157,
+                -0.35539258, -0.30985722, -0.2619247 , -0.21146986, -0.15835935,
+                -0.10245386, -0.04360537,  0.01834012,  0.08354533,  0.1521833 ,
+                 0.22443335,  0.30048597,  0.38054165,  0.46481046,  0.5535147 ,
+                 0.64688766,  0.7451749 ,  0.84863496,  0.9575405 ,  1.0721778 ,
+                 1.0299827 ,  1.1484327 ,  1.2731172 ,  1.4043638 ,  1.542518  ,
+                 1.6879438 ,  1.3271896 ,  1.461282  ,  1.602432  ,  1.7510111 ,
+                 0.19376944,  0.26820838,  0.3465651 ,  0.42904583,  0.36570245,
+                 0.3216895 ,  0.30862886,  0.2930376 ,  2.205694  ,  2.2822042 ,
+                 2.361043  ,  2.4423342 ,  2.5344768 ,  2.6348991 ,  2.7383358 ,
+                 2.8449464 ,  2.9548995 ,  0.34241316,  0.29691687,  0.24780072,
+                 0.19488177,  0.13795374,  0.07680468,  0.01122017, -0.0590414 ,
+                -0.13421977, -0.2145802 , -0.30039343, -0.3919433 , -0.48953617,
+                -0.5934811 , -0.704128  , -0.82181525, -0.94691837, -1.0798285 ,
+                -1.2209566 , -1.2205691 , -1.2205691 ], dtype=float32)>
+ic| probability: <tf.Tensor: shape=(1, 2), dtype=float32, numpy=array([[nan, nan]], dtype=float32)>
+ic| entropy: <tf.Tensor: shape=(), dtype=float32, numpy=nan>
+ic| old_probs: array([[0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.],
+                      [0., 1.]], dtype=float32)
+ic| actions: array([1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+                    1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+                    1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+                    1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+                    1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+                    1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], dtype=int32)
+ic| adv: <tf.Tensor: shape=(128,), dtype=float32, numpy=
+         array([-1.0953873 , -1.0887988 , -0.10663108, -0.04800299,  0.01371121,
+                 0.07867316,  0.14705482, -0.8325546 , -0.81213266, -0.79063594,
+                -0.7680079 , -0.7441891 , -0.7191165 , -0.6927242 , -0.66494316,
+                -0.63569933, -0.60491705, -0.5725142 , -0.5384058 ,  0.03256206,
+                 0.09851662,  0.16794203,  0.24102172,  0.31794775,  0.39892203,
+                 0.48415843, -1.0693151 , -1.061354  , -1.0529746 , -1.0441537 ,
+                -1.0348687 , -1.025095  , -1.014807  , -1.0039775 , -0.9925778 ,
+                -0.98057836, -0.9679471 , -0.95465136, -0.9406553 , -0.9259234 ,
+                -0.9104156 , -0.89409196, -0.8769085 , -0.85882115, -0.83978206,
+                -0.8197405 , -0.7986443 , -0.7764374 , -0.7530621 , -0.7284565 ,
+                -0.70255613, -0.6752921 , -0.6465935 , -0.61638427, -0.5845849 ,
+                -0.5511121 , -0.51587784, -0.47878835, -0.4397474 , -0.39865157,
+                -0.35539258, -0.30985722, -0.2619247 , -0.21146986, -0.15835935,
+                -0.10245386, -0.04360537,  0.01834012,  0.08354533,  0.1521833 ,
+                 0.22443335,  0.30048597,  0.38054165,  0.46481046,  0.5535147 ,
+                 0.64688766,  0.7451749 ,  0.84863496,  0.9575405 ,  1.0721778 ,
+                 1.0299827 ,  1.1484327 ,  1.2731172 ,  1.4043638 ,  1.542518  ,
+                 1.6879438 ,  1.3271896 ,  1.461282  ,  1.602432  ,  1.7510111 ,
+                 0.19376944,  0.26820838,  0.3465651 ,  0.42904583,  0.36570245,
+                 0.3216895 ,  0.30862886,  0.2930376 ,  2.205694  ,  2.2822042 ,
+                 2.361043  ,  2.4423342 ,  2.5344768 ,  2.6348991 ,  2.7383358 ,
+                 2.8449464 ,  2.9548995 ,  0.34241316,  0.29691687,  0.24780072,
+                 0.19488177,  0.13795374,  0.07680468,  0.01122017, -0.0590414 ,
+                -0.13421977, -0.2145802 , -0.30039343, -0.3919433 , -0.48953617,
+                -0.5934811 , -0.704128  , -0.82181525, -0.94691837, -1.0798285 ,
+                -1.2209566 , -1.2205691 , -1.2205691 ], dtype=float32)>
+ic| round(score): 18
+ic| round(score): 18
+ic| round(score): 18
+ic| round(score): 18
+ic| round(score): 18
+ic| round(score): 18
+ic| round(score): 18
+ic| round(score): 18
+ic| round(score): 18
+ic| round(score): 18
+ic| round(score): 18
+ic| round(score): 18
+ic| round(score): 18
+ic| round(score): 18
+ic| round(score): 18
+ic| round(score): 18
+ic| round(score): 18
+ic| round(score): 18
+ic| round(score): 18
+ic| round(score): 18
+ic| round(score): 18
+ic| round(score): 18
+ic| round(score): 18
+ic| round(score): 18
+ic| round(score): 18
+ic| round(score): 18
+ic| round(score): 18
+ic| round(score): 18
+ic| round(score): 18
+ic| round(score): 18
+ic| round(score): 18
+ic| round(score): 18
+ic| round(score): 18
+ic| round(score): 18
+ic| round(score): 18
+ic| round(score): 18
+ic| round(score): 18
+ic| round(score): 18
+ic| round(score): 18
+ic| round(score): 18
+ic| round(score): 18
+ic| round(score): 18
+ic| round(score): 18
+ic| round(score): 18
+ic| round(score): 18
+ic| round(score): 18
+ic| round(score): 18
+ic| round(score): 18
+ic| round(score): 18
+ic| round(score): 18
+ic| round(score): 18
+ic| round(score): 18
+ic| round(score): 18
+ic| round(score): 18
+ic| round(score): 18
+ic| round(score): 18
+ic| round(score): 18
+ic| round(score): 18
+ic| round(score): 18
+ic| round(score): 18
+ic| round(score): 18
+ic| round(score): 18
+ic| round(score): 18
+ic| round(score): 18
+ic| round(score): 18
+ic| round(score): 18
+ic| round(score): 18
+ic| round(score): 18
+ic| round(score): 18
+ic| round(score): 18
+ic| round(score): 18
+ic| round(score): 18
+ic| round(score): 18
+ic| round(score): 18
+ic| round(score): 19
+ic| round(score): 20
+ic| round(score): 21
+ic| round(score): 21
+ic| round(score): 22
+ic| round(score): 23
+ic| round(score): 24
+ic| round(score): 24
+ic| round(score): 25
+ic| round(score): 25
+ic| round(score): 26
+ic| round(score): 26
+ic| round(score): 27
+ic| round(score): 27
+ic| round(score): 27
+ic| round(score): 28
+ic| round(score): 28
+ic| round(score): 28
+ic| round(score): 28
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 29
+ic| round(score): 30
+ic| round(score): 34
+ic| round(score): 38
+ic| round(score): 41
+ic| round(score): 45
+ic| round(score): 48
+ic| round(score): 52
+ic| round(score): 55
+ic| round(score): 59
+ic| round(score): 62
+ic| round(score): 66
+ic| round(score): 69
+ic| round(score): 72
+ic| round(score): 76
+ic| round(score): 79
+ic| round(score): 82
+ic| round(score): 85
+ic| round(score): 88
+ic| round(score): 91
+ic| round(score): 94
+ic| round(score): 97
+ic| round(score): 100
+ic| round(score): 103
+ic| round(score): 106
+ic| round(score): 109
+ic| round(score): 112
+ic| round(score): 114
+ic| round(score): 117
+ic| round(score): 120
+ic| round(score): 122
+ic| round(score): 125
+ic| round(score): 128
+ic| round(score): 130
+ic| round(score): 133
+ic| round(score): 135
+ic| round(score): 138
+ic| round(score): 140
+ic| round(score): 142
+ic| round(score): 145
+ic| round(score): 147
+ic| round(score): 149
+ic| round(score): 151
+ic| round(score): 153
+ic| round(score): 156
+ic| round(score): 158
+ic| round(score): 160
+ic| round(score): 162
+ic| round(score): 164
+ic| round(score): 166
+ic| round(score): 168
+ic| round(score): 169
+ic| round(score): 171
+ic| round(score): 173
+ic| round(score): 175
+ic| round(score): 176
+ic| round(score): 178
+ic| round(score): 180
+ic| round(score): 181
+ic| round(score): 183
+ic| round(score): 184
+ic| round(score): 186
+ic| round(score): 187
+ic| round(score): 189
+ic| round(score): 190
+ic| round(score): 192
+ic| round(score): 193
+ic| round(score): 194
+ic| round(score): 195
+ic| round(score): 197
+ic| round(score): 198
+ic| round(score): 199
+ic| round(score): 200
+ic| round(score): 201
+ic| round(score): 202
+ic| round(score): 203
+ic| round(score): 204
+ic| round(score): 205
+ic| round(score): 206
+ic| round(score): 206
+ic| round(score): 207
+ic| round(score): 208
+ic| round(score): 209
+ic| round(score): 209
+ic| round(score): 210
+ic| round(score): 210
+ic| round(score): 211
+ic| round(score): 211
+ic| round(score): 212
+ic| round(score): 212
+ic| round(score): 213
+ic| round(score): 213
+ic| round(score): 213
+ic| round(score): 214
+ic| round(score): 214
+ic| round(score): 214
+ic| round(score): 214
+ic| round(score): 215
+ic| round(score): 215
+ic| round(score): 215
+ic| round(score): 215
+ic| round(score): 215
+ic| round(score): 215
+ic| round(score): 215
+ic| round(score): 215
+ic| round(score): 215
+ic| round(score): 215
+ic| round(score): 215
+ic| round(score): 215
+ic| round(score): 215
+ic| round(score): 215
+ic| round(score): 215
+ic| round(score): 215
+ic| round(score): 215
+ic| round(score): 215
+ic| round(score): 215
+ic| round(score): 215
+ic| round(score): 215
+ic| round(score): 215
+ic| round(score): 215
+ic| round(score): 215
+ic| round(score): 215
+ic| round(score): 215
+ic| round(score): 215
+ic| round(score): 215
+ic| round(score): 215
+ic| round(score): 215
+ic| round(score): 215
+ic| round(score): 215
+ic| round(score): 215
+ic| round(score): 215
+ic| round(score): 215
+ic| round(score): 215
+ic| round(score): 215
+ic| round(score): 215
+ic| round(score): 215
+ic| round(score): 215
+ic| round(score): 215
+ic| round(score): 215
+ic| round(score): 215
+ic| round(score): 215
+ic| round(score): 215
+ic| round(score): 215
+ic| round(score): 215
+ic| round(score): 215
+ic| round(score): 215
+ic| round(score): 215
+ic| round(score): 215
+ic| round(score): 215
+ic| round(score): 215
+ic| round(score): 215
+ic| round(score): 215
+ic| round(score): 215
+ic| round(score): 215
+ic| round(score): 215
+ic| round(score): 215
+ic| round(score): 215
+ic| round(score): 215
+ic| round(score): 215
+ic| round(score): 215
+ic| round(score): 215
+ic| round(score): 215
+ic| round(score): 215
+ic| round(score): 215
+ic| round(score): 215
+ic| round(score): 216
+ic| round(score): 217
+ic| round(score): 218
+ic| round(score): 219
+ic| round(score): 220
+ic| round(score): 221
+ic| round(score): 222
+ic| round(score): 223
+ic| round(score): 224
+ic| round(score): 225
+ic| round(score): 225
+ic| round(score): 226
+ic| round(score): 227
+ic| round(score): 228
+ic| round(score): 228
+ic| round(score): 229
+ic| round(score): 229
+ic| round(score): 230
+ic| round(score): 231
+ic| round(score): 231
+ic| round(score): 231
+ic| round(score): 232
+ic| round(score): 232
+ic| round(score): 232
+ic| round(score): 233
+ic| round(score): 233
+ic| round(score): 233
+ic| round(score): 233
+ic| round(score): 233
+ic| round(score): 234
+ic| round(score): 234
+ic| round(score): 234
+ic| round(score): 234
+ic| round(score): 234
+ic| round(score): 234
+ic| round(score): 234
+ic| round(score): 234
+ic| round(score): 234
+ic| round(score): 234
+ic| round(score): 234
+ic| round(score): 234
+ic| round(score): 234
+ic| round(score): 234
+ic| round(score): 234
+ic| round(score): 234
+ic| round(score): 234
+ic| round(score): 234
+ic| round(score): 234
+ic| round(score): 234
+ic| round(score): 234
+ic| round(score): 234
+ic| round(score): 234
+ic| round(score): 234
+ic| round(score): 234
+ic| round(score): 234
+ic| round(score): 234
+ic| round(score): 234
+ic| round(score): 234
+ic| round(score): 234
+ic| round(score): 234
+ic| round(score): 234
+ic| round(score): 234
+ic| round(score): 234
+ic| round(score): 234
+ic| round(score): 234
+ic| round(score): 234
+ic| round(score): 234
+ic| round(score): 234
+ic| round(score): 234
+ic| round(score): 234
+ic| round(score): 234
+ic| round(score): 234
+ic| round(score): 234
+ic| round(score): 234
+ic| round(score): 234
+ic| round(score): 234
+ic| round(score): 234
+ic| round(score): 234
+ic| round(score): 234
+ic| round(score): 234
+ic| round(score): 234
+ic| round(score): 234
+ic| round(score): 234
+ic| round(score): 234
+ic| round(score): 235
+ic| round(score): 237
+ic| round(score): 238
+ic| round(score): 239
+ic| round(score): 240
+ic| round(score): 242
+ic| round(score): 243
+ic| round(score): 244
+ic| round(score): 245
+ic| round(score): 246
+ic| round(score): 247
+ic| round(score): 248
+ic| round(score): 249
+ic| round(score): 250
+ic| round(score): 251
+ic| round(score): 252
+ic| round(score): 252
+ic| round(score): 253
+ic| round(score): 254
+ic| round(score): 255
+ic| round(score): 255
+ic| round(score): 256
+ic| round(score): 256
+ic| round(score): 257
+ic| round(score): 258
+ic| round(score): 258
+ic| round(score): 258
+ic| round(score): 259
+ic| round(score): 259
+ic| round(score): 259
+ic| round(score): 260
+ic| round(score): 260
+ic| round(score): 260
+ic| round(score): 260
+ic| round(score): 260
+ic| round(score): 261
+ic| round(score): 261
+ic| round(score): 261
+ic| round(score): 261
+ic| round(score): 261
+ic| round(score): 261
+ic| round(score): 261
+ic| round(score): 261
+ic| round(score): 261
+ic| round(score): 261
+ic| round(score): 261
+ic| round(score): 261
+ic| round(score): 261
+ic| round(score): 261
+ic| round(score): 261
+ic| round(score): 261
+ic| round(score): 261
+ic| round(score): 261
+ic| round(score): 261
+ic| round(score): 261
+ic| round(score): 261
+ic| round(score): 261
+ic| round(score): 261
+ic| round(score): 261
+ic| round(score): 261
+ic| round(score): 261
+ic| round(score): 261
+ic| round(score): 261
+ic| round(score): 261
+ic| round(score): 261
+ic| round(score): 261
+ic| round(score): 261
+ic| round(score): 261
+ic| round(score): 261
+ic| round(score): 261
+ic| round(score): 261
+ic| round(score): 261
+ic| round(score): 261
+ic| round(score): 261
+ic| round(score): 261
+ic| round(score): 261
+ic| round(score): 261
+ic| round(score): 261
+ic| round(score): 261
+ic| round(score): 261
+ic| round(score): 261
+ic| round(score): 261
+ic| round(score): 261
+ic| round(score): 261
+ic| round(score): 261
+ic| round(score): 261
+ic| round(score): 261
+ic| round(score): 261
+ic| round(score): 261
+ic| round(score): 261
+ic| round(score): 261
+ic| round(score): 261
+ic| round(score): 262
+ic| round(score): 264
+ic| round(score): 265
+ic| round(score): 266
+ic| round(score): 267
+ic| round(score): 269
+ic| round(score): 270
+ic| round(score): 271
+ic| round(score): 272
+ic| round(score): 273
+ic| round(score): 274
+ic| round(score): 275
+ic| round(score): 276
+ic| round(score): 277
+ic| round(score): 277
+ic| round(score): 278
+ic| round(score): 279
+ic| round(score): 280
+ic| round(score): 280
+ic| round(score): 281
+ic| round(score): 282
+ic| round(score): 282
+ic| round(score): 283
+ic| round(score): 283
+ic| round(score): 284
+ic| round(score): 284
+ic| round(score): 285
+ic| round(score): 285
+ic| round(score): 285
+ic| round(score): 285
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 286
+ic| round(score): 287
+ic| round(score): 289
+ic| round(score): 290
+ic| round(score): 292
+ic| round(score): 293
+ic| round(score): 294
+ic| round(score): 296
+ic| round(score): 297
+ic| round(score): 298
+ic| round(score): 299
+ic| round(score): 301
+ic| round(score): 302
+ic| round(score): 303
+ic| round(score): 304
+ic| round(score): 305
+ic| round(score): 306
+ic| round(score): 307
+ic| round(score): 308
+ic| round(score): 309
+ic| round(score): 309
+ic| round(score): 310
+ic| round(score): 311
+ic| round(score): 312
+ic| round(score): 312
+ic| round(score): 313
+ic| round(score): 314
+ic| round(score): 314
+ic| round(score): 315
+ic| round(score): 315
+ic| round(score): 316
+ic| round(score): 316
+ic| round(score): 317
+ic| round(score): 317
+ic| round(score): 317
+ic| round(score): 317
+ic| round(score): 318
+ic| round(score): 318
+ic| round(score): 318
+ic| round(score): 318
+ic| round(score): 318
+ic| round(score): 318
+ic| round(score): 318
+ic| round(score): 318
+ic| round(score): 318
+ic| round(score): 318
+ic| round(score): 318
+ic| round(score): 318
+ic| round(score): 318
+ic| round(score): 318
+ic| round(score): 318
+ic| round(score): 318
+ic| round(score): 318
+ic| round(score): 318
+ic| round(score): 318
+ic| round(score): 318
+ic| round(score): 318
+ic| round(score): 318
+ic| round(score): 318
+ic| round(score): 318
+ic| round(score): 318
+ic| round(score): 320
+ic| round(score): 321
+ic| round(score): 323
+ic| round(score): 325
+ic| round(score): 327
+ic| round(score): 328
+ic| round(score): 330
+ic| round(score): 332
+ic| round(score): 333
+ic| round(score): 335
+ic| round(score): 336
+ic| round(score): 338
+ic| round(score): 339
+ic| round(score): 341
+ic| round(score): 342
+ic| round(score): 343
+ic| round(score): 345
+ic| round(score): 346
+ic| round(score): 347
+ic| round(score): 348
+ic| round(score): 349
+ic| round(score): 351
+ic| round(score): 352
+ic| round(score): 353
+ic| round(score): 354
+ic| round(score): 355
+ic| round(score): 355
+ic| round(score): 356
+ic| round(score): 357
+ic| round(score): 358
+ic| round(score): 359
+ic| round(score): 359
+ic| round(score): 360
+ic| round(score): 361
+ic| round(score): 361
+ic| round(score): 362
+ic| round(score): 363
+ic| round(score): 363
+ic| round(score): 363
+ic| round(score): 364
+ic| round(score): 364
+ic| round(score): 365
+ic| round(score): 365
+ic| round(score): 365
+ic| round(score): 365
+ic| round(score): 366
+ic| round(score): 366
+ic| round(score): 366
+ic| round(score): 366
+ic| round(score): 366
+ic| round(score): 366
+ic| round(score): 366
+ic| round(score): 366
+ic| round(score): 366
+ic| round(score): 366
+ic| round(score): 366
+ic| round(score): 366
+ic| round(score): 366
+ic| round(score): 366
+ic| round(score): 366
+ic| round(score): 366
+ic| round(score): 366
+ic| round(score): 366
+ic| round(score): 366
+ic| round(score): 366
+ic| round(score): 366
+ic| round(score): 366
+ic| round(score): 366
+ic| round(score): 366
+ic| round(score): 366
+ic| round(score): 366
+ic| round(score): 366
+ic| round(score): 366
+ic| round(score): 366
+ic| round(score): 366
+ic| round(score): 366
+ic| round(score): 366
+ic| round(score): 366
+ic| round(score): 366
+ic| round(score): 366
+ic| round(score): 366
+ic| round(score): 368
+ic| round(score): 370
+ic| round(score): 372
+ic| round(score): 373
+ic| round(score): 375
+ic| round(score): 376
+ic| round(score): 378
+ic| round(score): 379
+ic| round(score): 381
+ic| round(score): 382
+ic| round(score): 384
+ic| round(score): 385
+ic| round(score): 386
+ic| round(score): 387
+ic| round(score): 389
+ic| round(score): 390
+ic| round(score): 391
+ic| round(score): 392
+ic| round(score): 393
+ic| round(score): 394
+ic| round(score): 395
+ic| round(score): 396
+ic| round(score): 397
+ic| round(score): 398
+ic| round(score): 399
+ic| round(score): 399
+ic| round(score): 400
+ic| round(score): 401
+ic| round(score): 402
+ic| round(score): 402
+ic| round(score): 403
+ic| round(score): 403
+ic| round(score): 404
+ic| round(score): 405
+ic| round(score): 405
+ic| round(score): 405
+ic| round(score): 406
+ic| round(score): 406
+ic| round(score): 406
+ic| round(score): 407
+ic| round(score): 407
+ic| round(score): 407
+ic| round(score): 407
+ic| round(score): 407
+ic| round(score): 408
+ic| round(score): 408
+ic| round(score): 408
+ic| round(score): 408
+ic| round(score): 408
+ic| round(score): 408
+ic| round(score): 408
+ic| round(score): 408
+ic| round(score): 408
+ic| round(score): 408
+ic| round(score): 408
+ic| round(score): 408
+ic| round(score): 408
+ic| round(score): 408
+ic| round(score): 408
+ic| round(score): 408
+ic| round(score): 408
+ic| round(score): 408
+ic| round(score): 408
+ic| round(score): 408
+ic| round(score): 408
+ic| round(score): 408
+ic| round(score): 408
+ic| round(score): 408
+ic| round(score): 408
+ic| round(score): 408
+ic| round(score): 408
+ic| round(score): 408
+ic| round(score): 408
+ic| round(score): 408
+ic| round(score): 408
+ic| round(score): 408
+ic| round(score): 408
+ic| round(score): 408
+ic| round(score): 408
+ic| round(score): 408
+ic| round(score): 408
+ic| round(score): 408
+ic| round(score): 408
+ic| round(score): 408
+ic| round(score): 408
+ic| round(score): 408
+ic| round(score): 409
+ic| round(score): 411
+ic| round(score): 412
+ic| round(score): 414
+ic| round(score): 415
+ic| round(score): 417
+ic| round(score): 418
+ic| round(score): 420
+ic| round(score): 421
+ic| round(score): 422
+ic| round(score): 423
+ic| round(score): 425
+ic| round(score): 426
+ic| round(score): 427
+ic| round(score): 428
+ic| round(score): 429
+ic| round(score): 430
+ic| round(score): 431
+ic| round(score): 432
+ic| round(score): 433
+ic| round(score): 434
+ic| round(score): 435
+ic| round(score): 435
+ic| round(score): 436
+ic| round(score): 437
+ic| round(score): 438
+ic| round(score): 438
+ic| round(score): 439
+ic| round(score): 439
+ic| round(score): 440
+ic| round(score): 441
+ic| round(score): 441
+ic| round(score): 441
+ic| round(score): 442
+ic| round(score): 442
+ic| round(score): 442
+ic| round(score): 443
+ic| round(score): 443
+ic| round(score): 443
+ic| round(score): 443
+ic| round(score): 443
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 444
+ic| round(score): 445
+ic| round(score): 446
+ic| round(score): 447
+ic| round(score): 448
+ic| round(score): 449
+ic| round(score): 450
+ic| round(score): 451
+ic| round(score): 452
+ic| round(score): 453
+ic| round(score): 454
+ic| round(score): 455
+ic| round(score): 456
+ic| round(score): 456
+ic| round(score): 457
+ic| round(score): 458
+ic| round(score): 459
+ic| round(score): 459
+ic| round(score): 460
+ic| round(score): 460
+ic| round(score): 461
+ic| round(score): 461
+ic| round(score): 462
+ic| round(score): 462
+ic| round(score): 462
+ic| round(score): 463
+ic| round(score): 463
+ic| round(score): 463
+ic| round(score): 463
+ic| round(score): 464
+ic| round(score): 464
+ic| round(score): 464
+ic| round(score): 464
+ic| round(score): 464
+ic| round(score): 464
+ic| round(score): 464
+ic| round(score): 464
+ic| round(score): 464
+ic| round(score): 464
+ic| round(score): 464
+ic| round(score): 464
+ic| round(score): 464
+ic| round(score): 464
+ic| round(score): 464
+ic| round(score): 464
+ic| round(score): 464
+ic| round(score): 464
+ic| round(score): 464
+ic| round(score): 464
+ic| round(score): 464
+ic| round(score): 464
+ic| round(score): 464
+ic| round(score): 464
+ic| round(score): 464
+ic| round(score): 464
+ic| round(score): 464
+ic| round(score): 464
+ic| round(score): 464
+ic| round(score): 464
+ic| round(score): 464
+ic| round(score): 464
+ic| round(score): 464
+ic| round(score): 464
+ic| round(score): 464
+ic| round(score): 464
+ic| round(score): 465
+ic| round(score): 467
+ic| round(score): 468
+ic| round(score): 470
+ic| round(score): 472
+ic| round(score): 473
+ic| round(score): 475
+ic| round(score): 476
+ic| round(score): 478
+ic| round(score): 479
+ic| round(score): 480
+ic| round(score): 482
+ic| round(score): 483
+ic| round(score): 484
+ic| round(score): 485
+ic| round(score): 487
+ic| round(score): 488
+ic| round(score): 489
+ic| round(score): 490
+ic| round(score): 491
+ic| round(score): 492
+ic| round(score): 493
+ic| round(score): 494
+ic| round(score): 495
+ic| round(score): 495
+ic| round(score): 496
+ic| round(score): 497
+ic| round(score): 498
+ic| round(score): 498
+ic| round(score): 499
+ic| round(score): 500
+ic| round(score): 500
+ic| round(score): 501
+ic| round(score): 501
+ic| round(score): 502
+ic| round(score): 502
+ic| round(score): 503
+ic| round(score): 503
+ic| round(score): 503
+ic| round(score): 503
+ic| round(score): 504
+ic| round(score): 504
+ic| round(score): 504
+ic| round(score): 504
+ic| round(score): 504
+ic| round(score): 504
+ic| round(score): 504
+ic| round(score): 504
+ic| round(score): 504
+ic| round(score): 504
+ic| round(score): 504
+ic| round(score): 504
+ic| round(score): 504
+ic| round(score): 504
+ic| round(score): 504
+ic| round(score): 504
+ic| round(score): 504
+ic| round(score): 504
+ic| round(score): 504
+ic| round(score): 504
+ic| round(score): 504
+ic| round(score): 504
+ic| round(score): 504
+ic| round(score): 504
+ic| round(score): 504
+ic| round(score): 504
+ic| round(score): 504
+ic| round(score): 504
+ic| round(score): 504
+ic| round(score): 504
+ic| round(score): 504
+ic| round(score): 504
+ic| round(score): 504
+ic| round(score): 504
+ic| round(score): 504
+ic| round(score): 504
+ic| round(score): 504
+ic| round(score): 504
+ic| round(score): 504
+ic| round(score): 504
+ic| round(score): 504
+ic| round(score): 504
+ic| round(score): 504
+ic| round(score): 504
+ic| round(score): 504
+ic| round(score): 504
+ic| round(score): 504
+ic| round(score): 504
+ic| round(score): 504
+ic| round(score): 504
+ic| round(score): 504
+ic| round(score): 504
+ic| round(score): 504
+ic| round(score): 504
+ic| round(score): 504
+ic| round(score): 504
+ic| round(score): 504
+ic| round(score): 504
+ic| round(score): 504
+ic| round(score): 504
+ic| round(score): 504
+ic| round(score): 504
+ic| round(score): 504
+ic| round(score): 504
+ic| round(score): 504
+ic| round(score): 504
+ic| round(score): 504
+ic| round(score): 504
+ic| round(score): 504
+ic| round(score): 504
+ic| round(score): 504
+ic| round(score): 504
+ic| round(score): 504
+ic| round(score): 504
+ic| round(score): 504
+ic| round(score): 504
+ic| round(score): 504
+ic| round(score): 504
+ic| round(score): 504
+ic| round(score): 504
+ic| round(score): 504
+ic| round(score): 504
+ic| round(score): 504
+ic| round(score): 504
+ic| round(score): 505
+ic| round(score): 506
+ic| round(score): 507
+ic| round(score): 507
+ic| round(score): 508
+ic| round(score): 509
+ic| round(score): 510
+ic| round(score): 510
+ic| round(score): 511
+ic| round(score): 511
+ic| round(score): 512
+ic| round(score): 512
+ic| round(score): 513
+ic| round(score): 513
+ic| round(score): 513
+ic| round(score): 514
+ic| round(score): 514
+ic| round(score): 514
+ic| round(score): 514
+ic| round(score): 515
+ic| round(score): 515
+ic| round(score): 515
+ic| round(score): 515
+ic| round(score): 515
+ic| round(score): 515
+ic| round(score): 515
+ic| round(score): 515
+ic| round(score): 515
+ic| round(score): 515
+ic| round(score): 515
+ic| round(score): 515
+ic| round(score): 515
+ic| round(score): 515
+ic| round(score): 517
+ic| round(score): 521
+ic| round(score): 525
+ic| round(score): 529
+ic| round(score): 533
+ic| round(score): 536
+ic| round(score): 540
+ic| round(score): 544
+ic| round(score): 548
+ic| round(score): 551
+ic| round(score): 555
+ic| round(score): 558
+ic| round(score): 562
+ic| round(score): 565
+ic| round(score): 569
+ic| round(score): 572
+ic| round(score): 576
+ic| round(score): 579
+ic| round(score): 582
+ic| round(score): 585
+ic| round(score): 589
+ic| round(score): 592
+ic| round(score): 595
+ic| round(score): 598
+ic| round(score): 601
+ic| round(score): 604
+ic| round(score): 607
+ic| round(score): 610
+ic| round(score): 613
+ic| round(score): 616
+ic| round(score): 619
+ic| round(score): 621
+ic| round(score): 624
+ic| round(score): 627
+ic| round(score): 630
+ic| round(score): 632
+ic| round(score): 635
+ic| round(score): 637
+ic| round(score): 640
+ic| round(score): 643
+ic| round(score): 645
+ic| round(score): 647
+ic| round(score): 650
+ic| round(score): 652
+ic| round(score): 654
+ic| round(score): 657
+ic| round(score): 659
+ic| round(score): 661
+ic| round(score): 663
+ic| round(score): 665
+ic| round(score): 668
+ic| round(score): 670
+ic| round(score): 672
+ic| round(score): 674
+ic| round(score): 676
+ic| round(score): 677
+ic| round(score): 679
+ic| round(score): 681
+ic| round(score): 683
+ic| round(score): 685
+ic| round(score): 686
+ic| round(score): 688
+ic| round(score): 690
+ic| round(score): 691
+ic| round(score): 693
+ic| round(score): 694
+ic| round(score): 696
+ic| round(score): 697
+ic| round(score): 699
+ic| round(score): 700
+ic| round(score): 701
+ic| round(score): 703
+ic| round(score): 704
+ic| round(score): 705
+ic| round(score): 706
+ic| round(score): 708
+ic| round(score): 709
+ic| round(score): 710
+ic| round(score): 711
+ic| round(score): 712
+ic| round(score): 713
+ic| round(score): 714
+ic| round(score): 715
+ic| round(score): 715
+ic| round(score): 716
+ic| round(score): 717
+ic| round(score): 718
+ic| round(score): 718
+ic| round(score): 719
+ic| round(score): 720
+ic| round(score): 720
+ic| round(score): 721
+ic| round(score): 721
+ic| round(score): 722
+ic| round(score): 722
+ic| round(score): 723
+ic| round(score): 723
+ic| round(score): 723
+ic| round(score): 724
+ic| round(score): 724
+ic| round(score): 724
+ic| round(score): 724
+ic| round(score): 724
+ic| round(score): 725
+ic| round(score): 725
+ic| round(score): 725
+ic| round(score): 725
+ic| round(score): 725
+ic| round(score): 725
+ic| round(score): 725
+ic| round(score): 725
+ic| round(score): 725
+ic| round(score): 725
+ic| round(score): 725
+ic| round(score): 725
+ic| round(score): 725
+ic| round(score): 725
+ic| round(score): 725
+ic| round(score): 725
+ic| round(score): 725
+ic| round(score): 725
+ic| round(score): 725
+ic| round(score): 725
+ic| round(score): 725
+ic| round(score): 725
+ic| round(score): 725
+ic| round(score): 725
+ic| round(score): 725
+ic| round(score): 725
+ic| round(score): 725
+ic| round(score): 725
+ic| round(score): 725
+ic| round(score): 725
+ic| round(score): 725
+ic| round(score): 725
+ic| round(score): 725
+ic| round(score): 725
+ic| round(score): 725
+ic| round(score): 725
+ic| round(score): 725
+ic| round(score): 725
+ic| round(score): 725
+ic| round(score): 725
+ic| round(score): 725
+ic| round(score): 725
+ic| round(score): 725
+ic| round(score): 725
+ic| round(score): 725
+ic| round(score): 725
+ic| round(score): 725
+ic| round(score): 725
+ic| round(score): 725
+ic| round(score): 725
+ic| round(score): 725
+ic| round(score): 725
+ic| round(score): 725
+ic| round(score): 725
+ic| round(score): 725
+ic| round(score): 725
+ic| round(score): 725
+ic| round(score): 725
+ic| round(score): 725
+ic| round(score): 725
+ic| round(score): 725
+ic| round(score): 725
+ic| round(score): 725
+ic| round(score): 725
+ic| round(score): 725
+ic| round(score): 725
+ic| round(score): 725
+ic| round(score): 725
+ic| round(score): 725
+ic| round(score): 725
+ic| round(score): 725
+ic| round(score): 725
+ic| round(score): 725
+ic| round(score): 725
+ic| round(score): 725
+ic| round(score): 725
+ic| round(score): 725
+ic| round(score): 725
+ic| round(score): 725
+ic| round(score): 725
+ic| round(score): 725
+ic| round(score): 726
+ic| round(score): 727
+ic| round(score): 727
+ic| round(score): 728
+ic| round(score): 729
+ic| round(score): 730
+ic| round(score): 730
+ic| round(score): 731
+ic| round(score): 731
+ic| round(score): 732
+ic| round(score): 732
+ic| round(score): 733
+ic| round(score): 733
+ic| round(score): 733
+ic| round(score): 734
+ic| round(score): 734
+ic| round(score): 734
+ic| round(score): 734
+ic| round(score): 735
+ic| round(score): 735
+ic| round(score): 735
+ic| round(score): 735
+ic| round(score): 735
+ic| round(score): 735
+ic| round(score): 735
+ic| round(score): 735
+ic| round(score): 735
+ic| round(score): 735
+ic| round(score): 735
+ic| round(score): 735
+ic| round(score): 735
+ic| round(score): 735
+ic| round(score): 735
+ic| round(score): 735
+ic| round(score): 735
+ic| round(score): 735
+ic| round(score): 735
+ic| round(score): 735
+ic| round(score): 735
+ic| round(score): 735
+ic| round(score): 735
+ic| round(score): 735
+ic| round(score): 735
+ic| round(score): 735
+ic| round(score): 735
+ic| round(score): 735
+ic| round(score): 735
+ic| round(score): 735
+ic| round(score): 735
+ic| round(score): 735
+ic| round(score): 735
+ic| round(score): 735
+ic| round(score): 735
+ic| round(score): 735
+ic| round(score): 735
+ic| round(score): 735
+ic| round(score): 735
+ic| round(score): 735
+ic| round(score): 735
+ic| round(score): 737
+ic| round(score): 738
+ic| round(score): 740
+ic| round(score): 741
+ic| round(score): 743
+ic| round(score): 744
+ic| round(score): 746
+ic| round(score): 747
+ic| round(score): 749
+ic| round(score): 750
+ic| round(score): 751
+ic| round(score): 752
+ic| round(score): 754
+ic| round(score): 755
+ic| round(score): 756
+ic| round(score): 757
+ic| round(score): 758
+ic| round(score): 759
+ic| round(score): 760
+ic| round(score): 761
+ic| round(score): 762
+ic| round(score): 763
+ic| round(score): 764
+ic| round(score): 764
+ic| round(score): 765
+ic| round(score): 766
+ic| round(score): 767
+ic| round(score): 767
+ic| round(score): 768
+ic| round(score): 768
+ic| round(score): 769
+ic| round(score): 770
+ic| round(score): 770
+ic| round(score): 770
+ic| round(score): 771
+ic| round(score): 771
+ic| round(score): 771
+ic| round(score): 772
+ic| round(score): 772
+ic| round(score): 772
+ic| round(score): 772
+ic| round(score): 772
+ic| round(score): 773
+ic| round(score): 773
+ic| round(score): 773
+ic| round(score): 773
+ic| round(score): 773
+ic| round(score): 773
+ic| round(score): 773
+ic| round(score): 773
+ic| round(score): 773
+ic| round(score): 773
+ic| round(score): 773
+ic| round(score): 773
+ic| round(score): 773
+ic| round(score): 773
+ic| round(score): 773
+ic| round(score): 773
+ic| round(score): 773
+ic| round(score): 773
+ic| round(score): 773
+ic| round(score): 773
+ic| round(score): 773
+ic| round(score): 773
+ic| round(score): 773
+ic| round(score): 773
+ic| round(score): 773
+ic| round(score): 773
+ic| round(score): 773
+ic| round(score): 773
+ic| round(score): 774
+ic| round(score): 775
+ic| round(score): 777
+ic| round(score): 779
+ic| round(score): 781
+ic| round(score): 782
+ic| round(score): 784
+ic| round(score): 785
+ic| round(score): 787
+ic| round(score): 788
+ic| round(score): 790
+ic| round(score): 791
+ic| round(score): 793
+ic| round(score): 794
+ic| round(score): 795
+ic| round(score): 796
+ic| round(score): 798
+ic| round(score): 799
+ic| round(score): 800
+ic| round(score): 801
+ic| round(score): 802
+ic| round(score): 803
+ic| round(score): 804
+ic| round(score): 805
+ic| round(score): 806
+ic| round(score): 807
+ic| round(score): 808
+ic| round(score): 808
+ic| round(score): 809
+ic| round(score): 810
+ic| round(score): 811
+ic| round(score): 811
+ic| round(score): 812
+ic| round(score): 812
+ic| round(score): 813
+ic| round(score): 814
+ic| round(score): 814
+ic| round(score): 814
+ic| round(score): 815
+ic| round(score): 815
+ic| round(score): 815
+ic| round(score): 816
+ic| round(score): 816
+ic| round(score): 816
+ic| round(score): 816
+ic| round(score): 816
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 817
+ic| round(score): 0
+ic| 'Dead'
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 0
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 1
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 2
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 2
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 3
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 3
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 4
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 4
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 5
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 5
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 6
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 6
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 6
+ic| action: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([2.], dtype=float32)>
+ic| round(score): 7
+ic| probability: <tf.Tensor: shape=(1, 2), dtype=float32, numpy=array([[nan, nan]], dtype=float32)>
+ic| entropy: <tf.Tensor: shape=(), dtype=float32, numpy=nan>
+ic| old_probs: array([[nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan],
+                      [nan, nan]], dtype=float32)
+ic| actions: array([2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2,
+                    2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2,
+                    2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2,
+                    2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2,
+                    2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2,
+                    2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2], dtype=int32)
+ic| adv: <tf.Tensor: shape=(128,), dtype=float32, numpy=
+         array([-0.44305453, -0.42164966, -0.39911795, -0.37540102, -0.35043547,
+                -0.32415536, -0.29649305, -0.2673742 , -0.2367235 , -0.204459  ,
+                -0.17049614,  0.03265713,  0.07909938,  0.12798561,  0.17944515,
+                 0.23361327,  0.8157472 ,  0.90340483,  0.9956756 ,  1.092803  ,
+                 1.1950425 ,  1.3026634 ,  1.4159477 , -0.96548903, -0.9715808 ,
+                -0.98774856, -0.99501115, -1.0026567 , -1.0107046 , -1.0191761 ,
+                -1.0280939 , -1.0374801 , -1.0473609 , -1.0577624 , -1.0687099 ,
+                -1.0802349 , -1.0923651 , -1.1051345 , -1.1185768 , -0.41123044,
+                -0.38815093, -0.36385658, -0.3382832 , -0.31136402, -0.28302795,
+                -0.25320065, -0.22180352, -0.1887545 , -0.15396486, -0.11734501,
+                -0.07879769, -0.03822148,  0.00449015,  0.04945046, -0.87924325,
+                -0.88079536, -0.8824295 , -0.88414985, -0.88596064, -0.88786685,
+                -0.88987297, -0.8919847 , -0.894208  , -0.89654803, -0.89901143,
+                -0.9016042 , -0.90433306, -0.9072065 , -0.9102304 , -0.91341406,
+                -0.6524855 , -0.64210266, -0.6311745 , -0.6196707 , -0.6075615 ,
+                -0.594815  , -0.58139724, -0.5672736 , -0.5524069 , -0.53675735,
+                -0.5202844 , -0.5126989 ,  2.0154793 ,  2.1662812 , -0.1854195 ,
+                -0.15045488,  0.60784465,  0.6845597 ,  0.76531225,  0.8503162 ,
+                 0.93979305,  1.0339794 ,  1.1331222 , -0.17710526, -0.14170273,
+                -0.10443785, -0.06521086, -0.02391946, -0.3031301 , -0.2743612 ,
+                -0.2440774 , -0.21220008,  0.837125  ,  0.9259078 ,  1.0193629 ,
+                 1.1177373 ,  1.2212887 ,  1.3302912 ,  1.4450294 ,  0.9571224 ,
+                 1.0522201 ,  1.1523241 ,  2.5878763 ,  2.7688036 ,  2.9592533 ,
+                 3.0430906 ,  3.1359055 ,  1.918248  ,  1.9648652 ,  2.0129788 ,
+                -0.19770066, -0.261427  , -0.32971832, -0.4028169 , -0.480975  ,
+                -0.56445855, -0.65354985, -0.7485419 ], dtype=float32)>
+2023-04-28 00:41:12.354556: W tensorflow/core/framework/op_kernel.cc:1830] OP_REQUIRES failed at strided_slice_op.cc:111 : INVALID_ARGUMENT: slice index 2 of dimension 0 out of bounds.
+Traceback (most recent call last):
+  File "/Users/phan/Documents/GWU/2023 Spring/ML-csci4364/doodle/my_gym.py", line 217, in <module>
+    al,cl = agentoo7.learn(states, actions, adv, probs, returns)
+  File "/Users/phan/Documents/GWU/2023 Spring/ML-csci4364/doodle/my_gym.py", line 116, in learn
+    a_loss = self.actor_loss(p, actions, adv, old_probs, c_loss)
+  File "/Users/phan/Documents/GWU/2023 Spring/ML-csci4364/doodle/my_gym.py", line 84, in actor_loss
+    ratio = tf.math.divide(pb[a],op[a])
+  File "/Users/phan/miniconda3/lib/python3.10/site-packages/tensorflow/python/util/traceback_utils.py", line 153, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/Users/phan/miniconda3/lib/python3.10/site-packages/tensorflow/python/framework/ops.py", line 7215, in raise_from_not_ok_status
+    raise core._status_to_exception(e) from None  # pylint: disable=protected-access
+tensorflow.python.framework.errors_impl.InvalidArgumentError: {{function_node __wrapped__StridedSlice_device_/job:localhost/replica:0/task:0/device:CPU:0}} slice index 2 of dimension 0 out of bounds. [Op:StridedSlice] name: strided_slice/

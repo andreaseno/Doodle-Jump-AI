@@ -7,36 +7,45 @@ import tensorflow_probability as tfp
 import tensorflow.python.keras.losses as kls
 import numpy as np
 from tensorflow import keras
+from keras.layers import Dense
 from icecream import ic
 
 class critic(tf.keras.Model):
     def __init__(self):
         super().__init__()
-        self.flat = keras.layers.Flatten(input_shape=(6,))
-        self.d1 = tf.keras.layers.Dense(6,activation='relu')
-        self.v = tf.keras.layers.Dense(1, activation = None)
+        self.critic_model = self.build_critic_model()
+
+    def build_critic_model(self):
+        model = tf.keras.Sequential([
+            Dense(64, activation='relu', input_shape=(6,)),
+            Dense(64, activation='relu'),
+            Dense(1, activation=None)
+        ])
+        return model
 
     def call(self, input_data):
-        input_data = convert_state(input_data)
-        flat = self.flat(input_data)
-        d1 = self.d1(flat)
-        v = self.v(d1)
-        return v
+        if isinstance(input_data, dict):
+            input_data = convert_state(input_data)   
+        return self.critic_model(input_data)
     
 
 class actor(tf.keras.Model):
     def __init__(self):
         super().__init__()
-        self.flat = keras.layers.Flatten(input_shape=(6,))
-        self.d1 = tf.keras.layers.Dense(6,activation='relu')
-        self.a = tf.keras.layers.Dense(2,activation='softmax')
+        self.actor_model = self.build_actor_model()
+
+    def build_actor_model(self):
+        model = tf.keras.Sequential([
+            Dense(64, activation='relu', input_shape=(6,)),
+            Dense(64, activation='relu'),
+            Dense(2, activation='softmax')
+        ])
+        return model
 
     def call(self, input_data):
-        input_data = convert_state(input_data)
-        flat = self.flat(input_data)
-        d1 = self.d1(flat)
-        a = self.a(d1)
-        return a
+        if isinstance(input_data, dict):
+            input_data = convert_state(input_data)
+        return self.actor_model(input_data)
     
 class agent():
     def __init__(self):
@@ -52,14 +61,18 @@ class agent():
         prob = prob.numpy()
         dist = tfp.distributions.Categorical(probs=prob, dtype=tf.float32)
         action = dist.sample()
+        ic(action)
         return int(action.numpy()[0])
    
     def actor_loss(self, probs, actions, adv, old_probs, closs):
         
         probability = probs      
         entropy = tf.reduce_mean(tf.math.negative(tf.math.multiply(probability,tf.math.log(probability))))
-        #print(probability)
-        #print(entropy)
+        ic(probability)
+        ic(entropy)
+        ic(old_probs)
+        ic(actions)
+        ic(adv)
         sur1 = []
         sur2 = []
         
@@ -89,9 +102,9 @@ class agent():
         discnt_rewards = tf.reshape(discnt_rewards, (len(discnt_rewards),))
         adv = tf.reshape(adv, (len(adv),))
 
-        old_p = old_probs
+        # old_p = old_probs
 
-        old_p = tf.reshape(old_p, (len(old_p),2))
+        # old_p = tf.reshape(old_p, (len(old_p),2))
         with tf.GradientTape() as tape1, tf.GradientTape() as tape2:
             # TODO: MODIFY THIS LINE
             state = states[-1]
@@ -116,7 +129,7 @@ def test_reward(env):
         next_state, reward, done, _, info = env.step(action)
         state = next_state
         total_reward += reward
-    ic(total_reward)
+    # ic(total_reward)
     return total_reward
 
 def preprocess1(states, actions, rewards, done, values, gamma):
@@ -195,7 +208,7 @@ for s in range(steps):
     
     value = agentoo7.critic(state).numpy()
     values.append(value[0][0])
-    np.reshape(probs, (len(probs),2))
+    # np.reshape(probs, (len(probs),2))
     probs = np.stack(probs, axis=0)
 
     states, actions,returns, adv  = preprocess1(states, actions, rewards, dones, values, 1)
@@ -205,27 +218,16 @@ for s in range(steps):
         # print(f"al{al}") 
         # print(f"cl{cl}")   
 
-    avg_reward = np.mean([test_reward(env) for _ in range(5)])
+    avg_reward = np.mean([test_reward(env) for _ in range(1)])
     print(f"total test reward is {avg_reward}")
     avg_rewards_list.append(avg_reward)
     if avg_reward > best_reward:
-            print('best reward=' + str(avg_reward))
-            agentoo7.actor.save('model_actor_{}_{}'.format(s, avg_reward), save_format="tf")
-            agentoo7.critic.save('model_critic_{}_{}'.format(s, avg_reward), save_format="tf")
+            print('avg reward=' + str(avg_reward))
+            # agentoo7.actor.save('model_actor_{}_{}'.format(s, avg_reward), save_format="tf")
+            # agentoo7.critic.save('model_critic_{}_{}'.format(s, avg_reward), save_format="tf")
             best_reward = avg_reward
     if best_reward == 200:
             target = True
     env.reset()
 
 env.close()
-
-
-
-
-# for i in range(10000):
-#     if i % 10 == 0:
-#         action = env.action_space.sample()
-#     observation, reward, terminated, truncated, info = env.step(action)
-
-#     if terminated or truncated:
-#         observation, info = env.reset()
