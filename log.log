@@ -1,0 +1,436 @@
+/Users/phan/miniconda3/lib/python3.10/site-packages/gym/spaces/box.py:127: UserWarning: [33mWARN: Box bound precision lowered by casting to float32[0m
+  logger.warn(f"Box bound precision lowered by casting to {self.dtype}")
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-1.0138052>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-1.0136027>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-1.0133982>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-1.0131916>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-1.0129828>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-1.0127721>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-1.0125592>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-1.0123441>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-1.0121268>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-1.0119073>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-1.0116857>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-1.0114619>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-1.0112357>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-1.0110072>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-1.0107765>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-1.0105433>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-1.0103079>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-1.0100701>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-1.0098299>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-1.0095873>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-1.0093422>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-1.0090946>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-1.0088445>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-1.0085919>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-1.0083368>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-1.008079>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-1.0078187>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-1.0075557>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-1.0072901>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-1.0070219>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-1.0067508>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-1.0064771>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-1.0062006>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-1.0059212>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-1.0056392>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-1.0053542>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-1.0050664>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-1.0047755>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-1.0044819>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-1.0041852>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-1.0038855>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-1.0035828>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-1.0032772>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-1.0029683>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-1.0026563>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-1.0023413>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-1.002023>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-1.0017015>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-1.0013767>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-1.0010487>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-1.0007173>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-1.0003827>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-1.0000446>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-0.99970305>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-0.9993581>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-0.9990097>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-0.99865776>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-0.9983023>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-0.9979432>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-0.99758047>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-0.99721414>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-0.99684405>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-0.9964702>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-0.9960926>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-0.9957112>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-0.9944472>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-0.9580391>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-0.9212143>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-0.8863692>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-0.8553457>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-0.82607585>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-1.041997>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-1.2355045>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-1.16501>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-1.1462966>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-1.1297458>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-1.1153796>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-1.10322>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-1.0938158>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-1.0863835>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-1.0812125>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-1.0775266>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-1.0761304>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-1.0765575>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-1.0769888>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-1.0774245>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-1.0778648>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-1.0783093>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-1.0787584>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-1.079212>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-1.0796702>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-1.080133>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-1.0806005>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-1.0151553>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-0.9476773>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-0.88158464>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-0.81689125>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-0.7496857>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-0.68415296>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-0.6239416>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-0.56518894>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-0.50455374>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-0.44886672>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-0.63657904>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-0.5351523>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.5552964], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-0.483337>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-0.43529606>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-0.38780436>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-0.3413575>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-0.2990151>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-0.25925237>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-0.080666594>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-0.06759375>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-0.054431677>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-0.13666548>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-0.030514294>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-0.06265562>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=-0.008548061>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=0.0023698935>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=0.07980343>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=0.042366605>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=0.074729964>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=0.07572373>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=0.112713754>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=0.10311066>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=0.3891476>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=0.124484554>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=0.13409632>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=0.14380519>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=0.15361212>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=0.5556105>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=0.17352419>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=0.22953916>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=0.24230067>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=0.20415287>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=0.72907513>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=0.2813639>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=0.23571908>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=0.83741593>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=0.32162285>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=0.9114792>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=0.34914443>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=0.29049128>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=0.3017799>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=1.0641453>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=0.32470033>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=0.3363345>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=0.34808618>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=0.35995656>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=0.37194684>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=1.304238>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=0.39629197>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=0.40864927>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=0.42113137>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=0.43373963>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=0.5266303>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=0.45933938>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=0.47233352>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=0.48545894>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=1.2953446>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=0.5121088>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=0.525636>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=1.8215306>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=0.55310166>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=1.92482>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=0.7263257>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=0.59534925>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=0.60971725>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=0.6242303>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=0.63889>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=0.81711984>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=2.2719793>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=2.3233235>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=0.8737808>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=2.4275599>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=0.7344448>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=0.77582896>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=2.7825742>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=2.9187036>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=0.8963377>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=1.1669209>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=1.211544>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=1.2520156>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=1.2930857>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=1.3313799>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=1.3686956>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=1.4034816>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=1.4390823>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=1.4698918>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=1.4983574>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=1.5245723>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=1.5504142>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=1.3315517>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=1.1104785>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-1.5514446], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=1.1321384>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=1.1540171>
+ic| new_log_prob: <tf.Tensor: shape=(1,), dtype=float32, numpy=array([-0.55144465], dtype=float32)>
+ic| loss: <tf.Tensor: shape=(), dtype=float32, numpy=1.1761167>
+Traceback (most recent call last):
+  File "/Users/phan/Documents/GWU/2023 Spring/ML-csci4364/doodle/doodle_gpt.py", line 669, in <module>
+    train(agent, env, episodes, timesteps)
+  File "/Users/phan/Documents/GWU/2023 Spring/ML-csci4364/doodle/doodle_gpt.py", line 649, in train
+    agent.update(states, actions, rewards, log_probs)
+  File "/Users/phan/Documents/GWU/2023 Spring/ML-csci4364/doodle/doodle_gpt.py", line 435, in update
+    self.optimizer.apply_gradients(zip(gradients, self.policy.trainable_variables))
+  File "/Users/phan/miniconda3/lib/python3.10/site-packages/keras/optimizers/optimizer_experimental/optimizer.py", line 1140, in apply_gradients
+    return super().apply_gradients(grads_and_vars, name=name)
+  File "/Users/phan/miniconda3/lib/python3.10/site-packages/keras/optimizers/optimizer_experimental/optimizer.py", line 634, in apply_gradients
+    iteration = self._internal_apply_gradients(grads_and_vars)
+  File "/Users/phan/miniconda3/lib/python3.10/site-packages/keras/optimizers/optimizer_experimental/optimizer.py", line 1166, in _internal_apply_gradients
+    return tf.__internal__.distribute.interim.maybe_merge_call(
+  File "/Users/phan/miniconda3/lib/python3.10/site-packages/tensorflow/python/distribute/merge_call_interim.py", line 51, in maybe_merge_call
+    return fn(strategy, *args, **kwargs)
+  File "/Users/phan/miniconda3/lib/python3.10/site-packages/keras/optimizers/optimizer_experimental/optimizer.py", line 1216, in _distributed_apply_gradients_fn
+    distribution.extended.update(
+  File "/Users/phan/miniconda3/lib/python3.10/site-packages/tensorflow/python/distribute/distribute_lib.py", line 2637, in update
+    return self._update(var, fn, args, kwargs, group)
+  File "/Users/phan/miniconda3/lib/python3.10/site-packages/tensorflow/python/distribute/distribute_lib.py", line 3710, in _update
+    return self._update_non_slot(var, fn, (var,) + tuple(args), kwargs, group)
+  File "/Users/phan/miniconda3/lib/python3.10/site-packages/tensorflow/python/distribute/distribute_lib.py", line 3716, in _update_non_slot
+    result = fn(*args, **kwargs)
+  File "/Users/phan/miniconda3/lib/python3.10/site-packages/tensorflow/python/autograph/impl/api.py", line 595, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/phan/miniconda3/lib/python3.10/site-packages/keras/optimizers/optimizer_experimental/optimizer.py", line 1213, in apply_grad_to_update_var
+    return self._update_step(grad, var)
+  File "/Users/phan/miniconda3/lib/python3.10/site-packages/keras/optimizers/optimizer_experimental/optimizer.py", line 224, in _update_step
+    self.update_step(gradient, variable)
+  File "/Users/phan/miniconda3/lib/python3.10/site-packages/keras/optimizers/optimizer_experimental/adam.py", line 200, in update_step
+    variable.assign_sub((m * alpha) / (tf.sqrt(v) + self.epsilon))
+  File "/Users/phan/miniconda3/lib/python3.10/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/Users/phan/miniconda3/lib/python3.10/site-packages/tensorflow/python/ops/math_ops.py", line 1407, in binary_op_wrapper
+    return func(x, y, name=name)
+  File "/Users/phan/miniconda3/lib/python3.10/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/Users/phan/miniconda3/lib/python3.10/site-packages/tensorflow/python/util/dispatch.py", line 1170, in op_dispatch_handler
+    result = api_dispatcher.Dispatch(args, kwargs)
+KeyboardInterrupt

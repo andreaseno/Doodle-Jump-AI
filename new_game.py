@@ -1,6 +1,6 @@
 import pygame, sys, random, math, os, time
 
-RENDER = False
+RENDER = True
 # default resolution: 360 x 640
 RESOLUTION = WIDTH, HEIGHT = 360, 640
 TITLE = "Doodle Jump"
