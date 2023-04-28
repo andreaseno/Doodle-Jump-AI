@@ -315,6 +315,9 @@ class DoodleJumpEnv(gym.Env):
         self.high_score = read_high_score()
         self.num_deaths = 0
         self.scores = []
+        self.start_time = 0
+        self.end_time = 0
+        self.runtimes = []
         # Observations are dictionaries with the agent's and the target's location.
         # Each location is encoded as an element of {0, ..., `size`}^2, i.e. MultiDiscrete([size, size]).
         self.observation_space = spaces.Dict(
@@ -359,9 +362,19 @@ class DoodleJumpEnv(gym.Env):
 
         # triggered when the doodle dies
         if is_game_over(self.player):
+            self.end_time = time.time()
             self.scores.append(self.player.score)
+            self.runtimes.append(self.end_time-self.start_time)
+            ic(self.runtimes)
             self.player, self.platforms, self.springs, self.time_scale, self.prev_time = new_game()
             self.num_deaths += 1
+            # file = open("scores.txt", 'a')
+            # file.write(str(sum(self.scores)/len(self.scores)) + '\n')
+            # file.close()
+            file = open("timePerRun.txt", 'a')
+            file.write(str(sum(self.runtimes)/len(self.runtimes)) + '\n')
+            file.close()
+            self.start_time = time.time()
             #  TODO add reset function to here if we want it to call env.reset() every time the doodle dies
         # update high score
         if self.player.score > self.high_score:
