@@ -23,7 +23,7 @@ class critic(tf.keras.Model):
 class actor(tf.keras.Model):
     def __init__(self):
         super().__init__()
-        self.d1 = tf.keras.layers.Dense(128,activation='relu')
+        self.d1 = tf.keras.layers.Dense(6,activation='relu')
         self.a = tf.keras.layers.Dense(2,activation='softmax')
 
     def call(self, input_data):
@@ -40,7 +40,10 @@ class agent():
 
           
     def act(self,state):
-        prob = self.actor(np.array([state]))
+        print(state)
+        statelist = [*state["agent"],*state["target_platform"],*state["target_spring"]]
+
+        prob = self.actor(np.array(statelist))
         prob = prob.numpy()
         dist = tfp.distributions.Categorical(probs=prob, dtype=tf.float32)
         action = dist.sample()
@@ -145,7 +148,8 @@ for s in range(steps):
         break
     
     done = False
-    state = env.reset()
+    state, info = env.reset()
+    print("LEO PHAN")
     all_aloss = []
     all_closs = []
     rewards = []

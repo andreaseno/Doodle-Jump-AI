@@ -318,7 +318,7 @@ class DoodleJumpEnv(gym.Env):
                 #  TODO fix observation space for PPO
                 "agent": spaces.Box(np.array([0,0]), np.array([WIDTH,HEIGHT]), dtype=float),
                 "target_platform": spaces.Box(np.array([0,0]), np.array([WIDTH,HEIGHT]), dtype=float),
-                "target_string": spaces.Box(np.array([0,0]), np.array([WIDTH,HEIGHT]), dtype=float),
+                "target_spring": spaces.Box(np.array([0,0]), np.array([WIDTH,HEIGHT]), dtype=float),
             }
         )
 
@@ -413,8 +413,8 @@ class DoodleJumpEnv(gym.Env):
 
     def _get_obs(self):
         return {"agent": self._agent_location,
-                "target_platform": 5,
-                "target_string": 5
+                "target_platform": self._platform_location,
+                "target_spring": [10,10]
                 # "target"
                 # TODO make "target" be nearest valid platform
                 # , "target": self._target_location
@@ -431,20 +431,25 @@ class DoodleJumpEnv(gym.Env):
             if (self.platforms[i].y > y): continue
             distances[i] = math.abs(x-(self.platforms[i].x+self.platforms[i].width/2)) + math.abs(y-self.platforms[i].y)
         pos = np.argmin(distances, axis=0)
-        return {"nearest": (self.platforms[pos[0]].x, self.platforms[pos[0]].y)}
+        self._platform_location = [self.platforms[pos].x,self.platforms[pos].y]
+        return {"nearest": (self.platforms[pos].x, self.platforms[pos].y)}
         # return {"distance": 5}
+        # return None
 
 
 
     def reset(self, seed=None, options=None):
         # We need the following line to seed self.np_random
+        print("Selman ERIS")
         super().reset(seed=seed)
 
         # Choose the agent's location 
-        self._agent_location = (WIDTH - 32 * y_scale) // 2
+        self._agent_location = [(WIDTH - 32 * y_scale) // 2, HEIGHT - 32 * y_scale]
 
-        observation = self._get_obs()
         info = self._get_info()
+        
+        observation = self._get_obs()
+        
 
         if self.render_mode == "human":
             self._render_frame()
@@ -461,8 +466,9 @@ class DoodleJumpEnv(gym.Env):
         # terminated = np.array_equal(self._agent_location, self._target_location)
         
         reward = 1 if terminated else 0  # Binary sparse rewards
-        observation = self._get_obs()
         info = self._get_info()
+        observation = self._get_obs()
+        
         self.new_platforms(self.player)
         self.simulate( action)
         
