@@ -6,30 +6,38 @@ import tensorflow as tf
 import tensorflow_probability as tfp
 import tensorflow.python.keras.losses as kls
 import numpy as np
-
+from tensorflow import keras
+from icecream import ic
 
 class critic(tf.keras.Model):
     def __init__(self):
         super().__init__()
-        self.d1 = tf.keras.layers.Dense(128,activation='relu')
+        self.flat = keras.layers.Flatten(input_shape=(6,))
+        self.d1 = tf.keras.layers.Dense(6,activation='relu')
         self.v = tf.keras.layers.Dense(1, activation = None)
 
     def call(self, input_data):
-        x = self.d1(input_data)
-        v = self.v(x)
+        input_data = convert_state(input_data)
+        flat = self.flat(input_data)
+        d1 = self.d1(flat)
+        v = self.v(d1)
         return v
     
 
 class actor(tf.keras.Model):
     def __init__(self):
         super().__init__()
+        self.flat = keras.layers.Flatten(input_shape=(6,))
         self.d1 = tf.keras.layers.Dense(6,activation='relu')
         self.a = tf.keras.layers.Dense(2,activation='softmax')
 
     def call(self, input_data):
-        x = self.d1(input_data)
-        a = self.a(x)
+        input_data = convert_state(input_data)
+        flat = self.flat(input_data)
+        d1 = self.d1(flat)
+        a = self.a(d1)
         return a
+    
 class agent():
     def __init__(self):
         self.a_opt = tf.keras.optimizers.Adam(learning_rate=7e-3)
@@ -40,14 +48,12 @@ class agent():
 
           
     def act(self,state):
-        print(state)
-        statelist = [*state["agent"],*state["target_platform"],*state["target_spring"]]
-
-        prob = self.actor(np.array(statelist))
+        prob = self.actor(state)
         prob = prob.numpy()
         dist = tfp.distributions.Categorical(probs=prob, dtype=tf.float32)
         action = dist.sample()
         return int(action.numpy()[0])
+   
     def actor_loss(self, probs, actions, adv, old_probs, closs):
         
         probability = probs      
@@ -87,8 +93,10 @@ class agent():
 
         old_p = tf.reshape(old_p, (len(old_p),2))
         with tf.GradientTape() as tape1, tf.GradientTape() as tape2:
-            p = self.actor(states, training=True)
-            v =  self.critic(states,training=True)
+            # TODO: MODIFY THIS LINE
+            state = states[-1]
+            p = self.actor(state, training=True)
+            v =  self.critic(state,training=True)
             v = tf.reshape(v, (len(v),))
             td = tf.math.subtract(discnt_rewards, v)
             c_loss = 0.5 * kls.mean_squared_error(discnt_rewards, v)
@@ -101,11 +109,11 @@ class agent():
         return a_loss, c_loss
 def test_reward(env):
     total_reward = 0
-    state = env.reset()
+    state, info = env.reset()
     done = False
     while not done:
-        action = np.argmax(agentoo7.actor(np.array([state])).numpy())
-        next_state, reward, done, _ = env.step(action)
+        action = np.argmax(agentoo7.actor(state).numpy())
+        next_state, reward, done, _, info = env.step(action)
         state = next_state
         total_reward += reward
 
@@ -123,7 +131,7 @@ def preprocess1(states, actions, rewards, done, values, gamma):
     returns.reverse()
     adv = np.array(returns, dtype=np.float32) - values[:-1]
     adv = (adv - np.mean(adv)) / (np.std(adv) + 1e-10)
-    states = np.array(states, dtype=np.float32)
+    states = np.array(states)
     actions = np.array(actions, dtype=np.int32)
     returns = np.array(returns, dtype=np.float32)
     return states, actions, returns, adv    
@@ -142,6 +150,14 @@ total_avgr = []
 target = False 
 best_reward = 0
 avg_rewards_list = []
+
+
+def convert_state(state):
+    ic(state)
+    statelist = [*state["agent"],*state["target_platform"],*state["target_spring"]]
+    statelist = np.array(statelist)
+    statelist = statelist.reshape(1, -1)  # reshape to (1, 6)
+    return statelist
 
 for s in range(steps):
     if target == True:
@@ -163,21 +179,21 @@ for s in range(steps):
     for e in range(128):
     
         action = agentoo7.act(state)
-        value = agentoo7.critic(np.array([state])).numpy()
+        value = agentoo7.critic(state).numpy()
         next_state, reward, done, _, info = env.step(action)
         dones.append(1-done)
         rewards.append(reward)
         states.append(state)
         #actions.append(tf.one_hot(action, 2, dtype=tf.int32).numpy().tolist())
         actions.append(action)
-        prob = agentoo7.actor(np.array([state]))
+        prob = agentoo7.actor(state)
         probs.append(prob[0])
         values.append(value[0][0])
         state = next_state
         if done:
             env.reset()
     
-    value = agentoo7.critic(np.array([state])).numpy()
+    value = agentoo7.critic(state).numpy()
     values.append(value[0][0])
     np.reshape(probs, (len(probs),2))
     probs = np.stack(probs, axis=0)

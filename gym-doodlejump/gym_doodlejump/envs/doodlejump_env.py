@@ -429,7 +429,7 @@ class DoodleJumpEnv(gym.Env):
         y = self.player.y
         for i in range(0,len(distances)-1): # for each platform
             if (self.platforms[i].y > y): continue
-            distances[i] = math.abs(x-(self.platforms[i].x+self.platforms[i].width/2)) + math.abs(y-self.platforms[i].y)
+            distances[i] = abs(x-(self.platforms[i].x+self.platforms[i].width/2)) + abs(y-self.platforms[i].y)
         pos = np.argmin(distances, axis=0)
         self._platform_location = [self.platforms[pos].x,self.platforms[pos].y]
         return {"nearest": (self.platforms[pos].x, self.platforms[pos].y)}
