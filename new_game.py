@@ -1,6 +1,6 @@
 import pygame, sys, random, math, os, time
 
-RENDER = True
+RENDER = False
 # default resolution: 360 x 640
 RESOLUTION = WIDTH, HEIGHT = 360, 640
 TITLE = "Doodle Jump"
@@ -385,6 +385,8 @@ def read_high_score():
 
 
 high_score = read_high_score()
+scores = []
+avg_scores_times = []
 while True:
     simulate(player, platforms, springs, time_scale)
     if player.score > high_score:
@@ -393,6 +395,15 @@ while True:
     new_platforms(player)
 
     if is_game_over(player):
+        scores.append(player.score)
+        total = 0
+        for score in scores:
+            total += score
+        avg_scores_times.append(total/len(scores))
+        file = open('scores.txt', "a")
+        file.write(str(total/len(scores)) + '\n')
+        file.close()
+
         player, platforms, springs, time_scale, prev_time = new_game()
 
     # Prevent the code from running too fast during a simulation
