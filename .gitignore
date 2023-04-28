@@ -7,3 +7,6 @@ __pycache__/camera.cpython-311.pyc
 __pycache__/
 
 high_score
+
+*.txt
+*.log
