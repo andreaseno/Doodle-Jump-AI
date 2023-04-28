@@ -315,12 +315,13 @@ class DoodleJumpEnv(gym.Env):
         self.observation_space = spaces.Dict(
             {
                 #  TODO fix observation space for PPO
-                "agent": spaces.Box(np.array([0,0]), np.array([WIDTH,HEIGHT]), dtype=int),
-                # "target": spaces.Box(0, size - 1, shape=(2,), dtype=int),
+                "agent": spaces.Box(np.array([0,0]), np.array([WIDTH,HEIGHT]), dtype=float),
+                "target_platform": spaces.Box(np.array([0,0]), np.array([WIDTH,HEIGHT]), dtype=float),
+                "target_string": spaces.Box(np.array([0,0]), np.array([WIDTH,HEIGHT]), dtype=float),
             }
         )
 
-        # # We have 4 actions, corresponding to "right", "up", "left", "down"
+        # # We have 3 actions, corresponding to "right", "left", "still"
         self.action_space = spaces.Discrete(3)
 
         # for rendering
@@ -409,7 +410,8 @@ class DoodleJumpEnv(gym.Env):
     
 
     def _get_obs(self):
-        return {"agent": self._agent_location 
+        return {"agent": self._agent_location
+                # "target"
                 # TODO make "target" be nearest valid platform
                 # , "target": self._target_location
                 }
