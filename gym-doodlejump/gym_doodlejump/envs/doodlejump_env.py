@@ -368,7 +368,7 @@ class DoodleJumpEnv(gym.Env):
             ic(self.runtimes)
             self.player, self.platforms, self.springs, self.time_scale, self.prev_time = new_game()
             self.num_deaths += 1
-            # file = open("scores.txt", 'a')
+            # file = open("scores2.txt", 'a')
             # file.write(str(sum(self.scores)/len(self.scores)) + '\n')
             # file.close()
             file = open("timePerRun.txt", 'a')
