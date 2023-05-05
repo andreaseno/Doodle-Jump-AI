@@ -5,7 +5,7 @@ from gym.utils import seeding
 from icecream import ic
 
 
-
+debug = False
 RENDER = True
 # default resolution: 360 x 640
 RESOLUTION = WIDTH, HEIGHT = 360, 640
@@ -496,7 +496,7 @@ class DoodleJumpEnv(gym.Env):
 
         return observation, info
     def get_rewards(self,score,prev_score):
-        ic(round(score))
+        if(debug): ic(round(score))
         if prev_score<score: return 1
         else: return 0
     def step(self, action):
@@ -507,7 +507,7 @@ class DoodleJumpEnv(gym.Env):
         if(self.num_deaths == 1):
             terminated = True
             self.num_deaths = 0
-            ic('Dead')
+            if(debug):ic('Dead')
             # time.sleep(5)
         # terminated = np.array_equal(self._agent_location, self._target_location)
         

@@ -8,6 +8,7 @@ random.seed(SEED_NUM)
 
 from icecream import ic
 
+debug = False
 RENDER = True
 # default resolution: 360 x 640
 RESOLUTION = WIDTH, HEIGHT = 360, 640
@@ -426,11 +427,11 @@ class PPOAgent:
                 logits = self.policy(state)
                 dist = tfp.distributions.Categorical(logits=logits)
                 new_log_prob = dist.log_prob(action)
-                ic(new_log_prob)
+                if(debug): ic(new_log_prob)
 
                 ratio = tf.exp(new_log_prob - old_log_prob)
                 loss = -tf.reduce_mean(tf.minimum(ratio * advantage, tf.clip_by_value(ratio, 1 - self.epsilon, 1 + self.epsilon) * advantage))
-                ic(loss)
+                if(debug): ic(loss)
                 gradients = tape.gradient(loss, self.policy.trainable_variables)
                 self.optimizer.apply_gradients(zip(gradients, self.policy.trainable_variables))
                 
@@ -647,7 +648,7 @@ def train(agent, env, episodes, timesteps):
             total_reward += reward
                     
         agent.update(states, actions, rewards, log_probs)
-        print(f"Episode {episode + 1}: Total Reward = {total_reward}", flush=True)
+        if(debug): print(f"Episode {episode + 1}: Total Reward = {total_reward}", flush=True)
         
             
 if __name__ == "__main__":
