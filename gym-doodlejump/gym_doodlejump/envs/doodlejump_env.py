@@ -28,7 +28,7 @@ gravity *= y_scale
 
 class Player():
     jump_force = 8 * y_scale
-    max_x_speed = 16 * x_scale
+    max_x_speed = 8 * x_scale
     x_acceleration = 0.15 * x_scale
     color = (255, 255, 0)
     color2 = (0, 255, 255)
@@ -306,14 +306,20 @@ def read_high_score():
 
 class DoodleJumpEnv(gym.Env):
     metadata = {"render_modes": ["human", "rgb_array"], "render_fps": 4}
-
+    def get_scores(self):
+        return self.scores
     def __init__(self, render_mode=None):
         
         # initialize all the doodlejump game objects
         self.player, self.platforms, self.springs, self.time_scale, self.prev_time = new_game()
         self.high_score = read_high_score()
         self.num_deaths = 0
-
+        self.scores = []
+        self.start_time = 0
+        self.end_time = 0
+        self.runtimes = []
+        self.score_per_moves = []
+        self.moves_performed = 0
         # Observations are dictionaries with the agent's and the target's location.
         # Each location is encoded as an element of {0, ..., `size`}^2, i.e. MultiDiscrete([size, size]).
         self.observation_space = spaces.Dict(
@@ -343,10 +349,38 @@ class DoodleJumpEnv(gym.Env):
         self.clock = None
     
     def simulate(self, action):
+
+
+        distances = [99999]*len(self.platforms)
+        for i in range(0,len(distances)):
+            if (self.platforms[i].y > self.player.y): continue
+            distances[i] = abs(self.player.x-(self.platforms[i].x-self.platforms[i].width/2)) + abs(self.player.y-self.platforms[i].y)
+        pos = np.argmin(distances, axis = 0)
+        closest = self.platforms[pos]
+        toLeft = False
+        toRight = False
+        if (closest.x > self.player.x): toRight = True
+        elif (closest.x < self.player.x): toLeft = True
+
         # triggered when the doodle dies
         if is_game_over(self.player):
+            self.end_time = time.time()
+            self.scores.append(self.player.score)
+            self.runtimes.append(self.end_time-self.start_time)
+            self.score_per_moves.append(self.player.score/self.moves_performed)
             self.player, self.platforms, self.springs, self.time_scale, self.prev_time = new_game()
             self.num_deaths += 1
+            # file = open("scores2.txt", 'a')
+            # file.write(str(sum(self.scores)/len(self.scores)) + '\n')
+            # file.close()
+            # file = open("timePerRun.txt", 'a')
+            # file.write(str(sum(self.runtimes)/len(self.runtimes)) + '\n')
+            # file.close()
+            file = open("scorePerMove2.txt", 'a')
+            file.write(str(sum(self.score_per_moves)/len(self.score_per_moves)) + '\n')
+            file.close()
+            self.start_time = time.time()
+            self.moves_performed = 0
             #  TODO add reset function to here if we want it to call env.reset() every time the doodle dies
         # update high score
         if self.player.score > self.high_score:
@@ -356,8 +390,11 @@ class DoodleJumpEnv(gym.Env):
             file.close()
         # necessary for updating the high score as well as rendering the screen
         get_event(self.high_score)
-        # move doodle based on input action (0,1,2)
-        self.player.move(action, self.time_scale)
+        # move doodle based on input action (0,1,2) 0 = left, 1  = still, 2 = right
+        if (not toLeft and  not toRight) :self.player.move(1, self.time_scale)
+        elif (toLeft and not toRight): self.player.move(0, self.time_scale)
+        elif (toRight and not toLeft): self.player.move(2, self.time_scale)
+        self.moves_performed+=1
         # check if player go above half of screen's height
         if self.player.y < HEIGHT // 2 - self.player.height:
             movement = HEIGHT // 2 - self.player.height - self.player.y
@@ -471,7 +508,7 @@ class DoodleJumpEnv(gym.Env):
             terminated = True
             self.num_deaths = 0
             ic('Dead')
-            time.sleep(5)
+            # time.sleep(5)
         # terminated = np.array_equal(self._agent_location, self._target_location)
         
         

@@ -6,6 +6,7 @@ RENDER = True
 RESOLUTION = WIDTH, HEIGHT = 360, 640
 TITLE = "Doodle Jump"
 TIME_SPEED = 1
+RANDOM_AI = True
 
 pygame.init()
 gravity = 0.15
@@ -29,6 +30,8 @@ class Player():
     color2 = (0, 255, 255)
     height = 32 * y_scale
     width = 32 * y_scale
+    moves = []
+    moves_performed = 0
 
     def __init__(self):
         self.y = HEIGHT - self.height
@@ -38,6 +41,10 @@ class Player():
         self.direction = 0
         self.moving_direction = 0
         self.score = 0
+
+        for _ in range(1000):
+            choice = random.choice([-1,0,1])
+            self.moves.extend([choice] * 5)
 
     def move(self, left_key_pressed, right_key_pressed, time_scale):
         # simulate gravity
@@ -107,18 +114,21 @@ class Platform():
         self.x = random.randint(0, int(WIDTH - self.width))
         self.y = y
         # platform types
-        if score < 500:
+        if(RANDOM_AI):
             self.type = 0
-        elif score < 1500:
-            self.type = random.choice([0, 0, 0, 0, 0, 0, 1, 1])
-        elif score < 2500:
-            self.type = random.choice([0, 0, 0, 0, 1, 1, 1, 1])
-        elif score < 3500:
-            self.type = random.choice([0, 0, 0, 1, 1, 1, 1, 2])
-        elif score < 5000:
-            self.type = random.choice([0, 0, 1, 1, 1, 2, 3])
         else:
-            self.type = random.choice([1, 1, 1, 1, 1, 2, 3, 3])
+            if score < 500:
+                self.type = 0
+            elif score < 1500:
+                self.type = random.choice([0, 0, 0, 0, 0, 0, 1, 1])
+            elif score < 2500:
+                self.type = random.choice([0, 0, 0, 0, 1, 1, 1, 1])
+            elif score < 3500:
+                self.type = random.choice([0, 0, 0, 1, 1, 1, 1, 2])
+            elif score < 5000:
+                self.type = random.choice([0, 0, 1, 1, 1, 2, 3])
+            else:
+                self.type = random.choice([1, 1, 1, 1, 1, 2, 3, 3])
 
         # decide if platform has spring on top
         # decide initial direction the platform if it moves
@@ -241,7 +251,7 @@ def get_event():
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 file = open(file_name, "w")
-                file.write(str(int(high_score)))
+                # file.write(str(int(high_score)))
                 file.close()
                 pygame.quit()
                 sys.exit()
@@ -328,6 +338,23 @@ def is_game_over(player):
 
 def simulate(player, platforms, springs, time_scale):
     (left_key_pressed, right_key_pressed) = get_event()
+
+    if(RANDOM_AI):
+        current_move = player.moves[player.moves_performed]
+        if(current_move == -1):
+            left_key_pressed = 1
+            right_key_pressed = 0
+        elif(current_move == 1):
+            left_key_pressed = 0
+            right_key_pressed = 1
+        else:
+            left_key_pressed = 1
+            right_key_pressed = 1
+        player.moves_performed+=1
+        # add new random moves if initial ones are used
+        if(player.moves_performed == len(player.moves)):
+            choice = random.choice([-1,0,1])
+            player.moves.extend([choice] * 5)
     player.move(left_key_pressed, right_key_pressed, time_scale)
 
     # check if player go above half of screen's height
@@ -359,6 +386,11 @@ def read_high_score():
 
 
 high_score = read_high_score()
+scores = []
+avg_scores_times = []
+time_per_run = []
+score_per_move = []
+start_time = time.time()
 while True:
     simulate(player, platforms, springs, time_scale)
     if player.score > high_score:
@@ -367,7 +399,32 @@ while True:
     new_platforms(player)
 
     if is_game_over(player):
+        end_time = time.time()
+        scores.append(player.score)
+        score_per_move.append(player.score/player.moves_performed)
+        time_per_run.append(end_time-start_time)
+        total = 0
+        total_time = 0
+        total_moves = 0
+        for score in scores:
+            total += score
+        for t in time_per_run:
+            total_time += t
+        for accuracy in score_per_move:
+            total_moves += accuracy
+        avg_scores_times.append(total/len(scores))
+        # file = open('scores.txt', "a")
+        # file.write(str(total/len(scores)) + '\n')
+        # file.close()
+        # file = open('timePerRun.txt', "a")
+        # file.write(str(total_time/len(time_per_run)) + '\n')
+        # file.close()
+        file = open('scorePerMove.txt', "a")
+        file.write(str(total_moves/len(score_per_move)) + '\n')
+        file.close()
+
         player, platforms, springs, time_scale, prev_time = new_game()
+        start_time = time.time()
 
     # Prevent the code from running too fast during a simulation
     if not RENDER: time.sleep(0.01)
